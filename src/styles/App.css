@@ -14,11 +14,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(117, 156, 216);
+  color: rgb(117, 180, 216);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #77419b;
 }
