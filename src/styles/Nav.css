@@ -1,0 +1,15 @@
+.navlinks {
+    text-align: center;
+    justify-content: space-around;
+    color: purple;
+}
+
+a {
+    color: pink;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: space-between;
+    margin: 5px;
+    padding: 5px;
+    padding-top: 10px;
+}

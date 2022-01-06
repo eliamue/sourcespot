@@ -1,12 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import '../styles/App.css';
+import '../styles/Home.css';
 import Nav from './Nav'
 
 export default class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="App">
                 <Nav />
-                <main>Home</main>
+                <p className="home_head">Home</p>
             </div>
         )
     }

@@ -1,12 +1,12 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 
 .App-header {
   background-color: #020202;

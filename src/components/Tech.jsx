@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Nav from './Nav'
+import Nav from './Nav';
+import "../styles/Tech.css";
 
 export default class Tech extends Component {
     render() {

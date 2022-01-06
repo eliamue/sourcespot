@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Nav from "./Nav";
+import "../styles/Resources.css";
 
 export default class Resources extends Component {
   render() {
