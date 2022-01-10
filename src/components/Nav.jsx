@@ -9,7 +9,7 @@ export default class Nav extends Component {
         <section className="navlinks">
           <Link to="/">Home</Link>
           <Link to="/resources">Resources</Link>
-          <Link to="/tech">Tech</Link>
+          <Link to="/suggestions">Suggestions</Link>
           <Link to="/about">About</Link>
         </section>
       </div>

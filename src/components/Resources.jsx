@@ -1,20 +1,24 @@
-import React, { Component } from "react";
-import Nav from "./Nav";
-import "../styles/Resources.css";
+import React from 'react';
+import Resource from './Resource';
+import { useManyResources } from '../hooks/useManyResources';
+import '../styles/List.css';
 
-export default class Resources extends Component {
-  render() {
-    return (
-      <div>
-        <Nav />
-        <header>
-          Links for professional resources like Brain Injury Alliance. etc
-        </header>
-        <ul>
-          <li>Brain Injury Alliance</li>
-          <li>TBI Support Facebook Group</li>
-        </ul>
-      </div>
-    );
-  }
-}
+const spinner =
+  'https://www.indiasentinels.com/LoaderIcon.gif';
+
+const ResourceList = () => {
+  const { loading, resources } = useManyResources();
+  if(loading) return <img src={spinner} alt="Loading" />;
+  
+  return (
+    <ul aria-label="srclist" className="resource-list">
+      {resources.map((resource) => (
+        <li key={resource.id}>
+          <Resource {...resource} />
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+export default ResourceList;
