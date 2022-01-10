@@ -27,7 +27,7 @@ const AddForm = () => {
       logo,
     };
     await createResource(data);
-    history.push('/');
+    // history.push('/');
   };
 
   return (
