@@ -1,13 +1,13 @@
 import React from 'react';
 import Resource from './Resource';
-import { useManyResources } from '../hooks/useManyResources';
+import { useAllResources } from '../../hooks/useAllResources';
 import '../styles/List.css';
 
 const spinner =
   'https://www.indiasentinels.com/LoaderIcon.gif';
 
 const ResourceList = () => {
-  const { loading, resources } = useManyResources();
+  const { loading, resources } = useAllResources();
   if(loading) return <img src={spinner} alt="Loading" />;
   
   return (

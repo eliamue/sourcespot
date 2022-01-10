@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ResourceList from '../components/Resources';
+import ResourceList from '../components/resources/ResourceList';
 import { fetchManyResources } from '../services/apiService';
 
 const spinner = 'https://www.indiasentinels.com/LoaderIcon.gif';

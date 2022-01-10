@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import About from "./components/About";
+import AddForm from "./components/AddForm";
 import Home from "./components/Home";
-import Resources from "./components/Resources";
-import Tech from "./components/Tech";
+import ResourceList from "./components/ResourceList";
+import ResourceDetail from "./components/resources/ResourceDetail";
+import Suggestions from "./components/Suggestions";
 
 export default function App() {
   return (
@@ -14,10 +16,16 @@ export default function App() {
             <Home />
           </Route>
           <Route exact path="/resources">
-            <Resources />
+            <ResourceList />
           </Route>
-          <Route exact path="/tech">
-            <Tech />
+          <Route exact path="/resources/:id">
+            <ResourceDetail />
+          </Route>
+          <Route exact path="/suggestions">
+            <Suggestions />
+          </Route>
+          <Route exact path="/suggestions/add">
+            <AddForm />
           </Route>
           <Route exact path="/about">
             <About />
