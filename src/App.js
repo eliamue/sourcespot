@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import About from "./components/About";
 import AddForm from "./components/AddForm";
 import Home from "./components/Home";
-import ResourceList from "./components/ResourceList";
+import Resources from "./components/resources/Resources";
 import ResourceDetail from "./components/resources/ResourceDetail";
 import Suggestions from "./components/Suggestions";
 
@@ -16,7 +16,7 @@ export default function App() {
             <Home />
           </Route>
           <Route exact path="/resources">
-            <ResourceList />
+            <Resources />
           </Route>
           <Route exact path="/resources/:id">
             <ResourceDetail />

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useCreate } from '../../hooks/createResource';
-import { createResource } from '../../services/apiService';
+import { useCreate } from '../hooks/createResource';
+import { createResource } from '../services/apiService';
 import '../styles/AddForm.css';
 
 const AddForm = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/Resource.css';
+import '../../styles/Resource.css';
 import { Link } from 'react-router-dom';
 
 const Resource = ({ id, title, category, link, logo, about }) => (

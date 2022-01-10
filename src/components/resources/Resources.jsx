@@ -1,12 +1,12 @@
 import React from 'react';
 import Resource from './Resource';
 import { useAllResources } from '../../hooks/useAllResources';
-import '../styles/List.css';
+import '../../styles/Resources.css';
 
 const spinner =
   'https://www.indiasentinels.com/LoaderIcon.gif';
 
-const ResourceList = () => {
+const Resources = () => {
   const { loading, resources } = useAllResources();
   if(loading) return <img src={spinner} alt="Loading" />;
   
@@ -21,4 +21,4 @@ const ResourceList = () => {
   );
 };
 
-export default ResourceList;
+export default Resources;
