@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import AddForm from './AddForm';
+import { Link } from "react-router-dom";
+import Nav from './Nav';
+
 
 export default class Suggestions extends Component {
     render() {
         return (
             <div>
-                <AddForm />
+                <Nav />
+                <Link to="/suggestions/add">Add Resource</Link>
+                
             </div>
         )
     }

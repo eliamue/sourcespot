@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import Nav from '../components/Nav';
-import Detail from '../components/resources/ResourceDetail';
+import ResourceDetail from '../components/resources/ResourceDetail';
 import { useOneResource } from '../hooks/useOneResource';
 
 const spinner =
@@ -16,7 +16,7 @@ const DetailContainer = () => {
   return (
     <>
       <Nav />
-      <Detail {...resource} />
+      <ResourceDetail {...resource} />
     </>
   );
 };

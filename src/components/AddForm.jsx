@@ -1,10 +1,13 @@
 import React from "react";
+import { useHistory } from 'react-router-dom';
 import PropTypes from "prop-types";
 import { useCreate } from "../hooks/createResource";
 import { createResource } from "../services/apiService";
 import "../styles/AddForm.css";
+import Nav from "./Nav";
 
 const AddForm = () => {
+  const history = useHistory();
   const {
     title,
     category,
@@ -27,11 +30,12 @@ const AddForm = () => {
       logo,
     };
     await createResource(data);
-    // history.push('/');
+    history.push('/resources');
   };
 
   return (
     <>
+    <Nav />
       <h1>Add Resource</h1>
       <p className="required">* Is Required</p>
       <form className="form-container" onSubmit={handleSubmit}>
@@ -64,6 +68,7 @@ const AddForm = () => {
             </option>
             <option value="Accessibility" label="Accessibility"></option>
             <option value="Advocacy" label="Advocacy"></option>
+            <option value="Education" label="Education"></option>
             <option value="Products" label="Products"></option>
             <option value="Other" label="Other"></option>
           </select>

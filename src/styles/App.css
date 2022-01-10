@@ -1,6 +1,7 @@
 .App {
   display: flex;
   flex-direction: column;
+  color: gray;
 }
 
 .App-logo {
@@ -22,4 +23,8 @@
 
 .App-link {
   color: #77419b;
+}
+
+body {
+  background-color: black;
 }

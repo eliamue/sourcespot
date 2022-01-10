@@ -11,7 +11,7 @@ const Resources = () => {
   if(loading) return <img src={spinner} alt="Loading" />;
   
   return (
-    <ul aria-label="srclist" className="resource-list">
+    <ul aria-label="resources" className="resource-list">
       {resources.map((resource) => (
         <li key={resource.id}>
           <Resource {...resource} />

@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../styles/Detail.css';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import { useOneResource } from '../../hooks/useOneResource';
-// import { deleteResource } from '../../services/apiService';
+import { deleteResource } from '../../services/apiService';
 
 
 const spinner = 'https://www.indiasentinels.com/LoaderIcon.gif';
@@ -10,7 +10,7 @@ const spinner = 'https://www.indiasentinels.com/LoaderIcon.gif';
 const ResourceDetail = () => {
   const { id } = useParams();
   const { loading, resource } = useOneResource(id);
-  // const history = useHistory();
+  const history = useHistory();
   const {
     title,
     category,
@@ -19,14 +19,14 @@ const ResourceDetail = () => {
     logo,
   } = resource;
 
-  // function handleDelete() {
-  //   deleteResource(id);
-  //   history.push('/');
-  // }
+  function handleDelete() {
+    deleteResource(id);
+    history.push('/resources');
+  }
 
-  // function handleEdit() {
-  //   history.push(`/edit/${id}`);
-  // }
+  function handleEdit() {
+    history.push(`/edit/${id}`);
+  }
 
   if (loading) return <img src={spinner} alt="Loading" />;
 
@@ -39,10 +39,10 @@ const ResourceDetail = () => {
         </a>
       <h4 className="description">{about}</h4>
 
-      {/* <section>
-        <button name="delete-btn" role="button" onClick={handleDelete}>Delete Resource</button>
+      <section>
+        <button name="delete-btn" onClick={handleDelete}>Delete Resource</button>
         <button onClick={handleEdit}>Edit Resource</button>
-      </section> */}
+      </section>
     </div>
   );
 };

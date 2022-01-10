@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Resources from '../components/resources/Resources';
 import { fetchManyResources } from '../services/apiService';
+import Nav from '../components/Nav';
 
 const spinner = 'https://www.indiasentinels.com/LoaderIcon.gif';
 
@@ -22,7 +23,7 @@ const ResourcesContainer = () => {
 
   return (
     <>
-
+    <Nav />
       <Resources 
         resources={resources}
       />

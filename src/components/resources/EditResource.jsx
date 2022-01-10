@@ -2,10 +2,12 @@ import React from 'react';
 import { updateResource } from '../../services/apiService';
 import { useUpdate } from '../../hooks/updateResource';
 import '../../styles/AddForm.css';
-import { useParams } from 'react-router';
+import { useParams, useHistory } from 'react-router-dom';
+import Nav from '../Nav';
 
 const EditResource = () => {
   const { id } = useParams();
+  const history = useHistory();
   const {
     title,
     category,
@@ -29,11 +31,12 @@ const EditResource = () => {
       logo,
     };
     await updateResource(id, updated);
-    // history.push(`/${id}`);
+    history.push(`/${id}`);
   };
 
   return (
     <>
+    <Nav />
       <h1>Add Resource</h1>
       <form className="add" onSubmit={handleSubmit}>
         <label>
@@ -41,7 +44,7 @@ const EditResource = () => {
           <input
             name="title"
             onChange={handleTitle}
-            placeholder="Company Inc."
+            placeholder="Name of company, extension, product, etc."
             value={title}
           />
         </label>
@@ -52,17 +55,16 @@ const EditResource = () => {
             onChange={handleCategory}
             value={category}
           >
-            <option value="Crisis" label="Crisis"></option>
-            <option value="Mental Health" label="Mental Health"></option>
-            <option value="Animal" label="Animal"></option>
-            <option value="Substances" label="Substances"></option>
-            <option value="Crime" label="Crime"></option>
-            <option value="Domestic" label="Domestic"></option>
+            <option value="Accessibility" label="Accessibility"></option>
+            <option value="Advocacy" label="Advocacy"></option>
+            <option value="Education" label="Education"></option>
+            <option value="Products" label="Products"></option>
+            <option value="Other" label="Other"></option>
           </select>
         </label>
 
         <label>
-          Brief Description of Resource:
+          Description of Resource:
           <textarea
             name="about"
             onChange={handleAbout}
@@ -72,99 +74,26 @@ const EditResource = () => {
         </label>
 
         <label>
-          Street Address:
+          Link to Resource:
           <input
             name="link"
-            className="st}
             onChange={handleLink}
             value={link}
-            placeholder="123 Main St, #2"
+            placeholder="Link to resource website/detail"
           />
         </label>
 
         <label>
-          City:
+          Logo or Image:
           <input
-            name="City"
+            name="Logo"
             onChange={handleLogo}
-            value={city}
-            placeholder="Anytown"
-          />
-        </label>
-
-        <label>
-          State:
-          <input
-            name="logo"
-            onChange={handleUsState}
             value={logo}
-            placeholder="MN"
+            placeholder="Direct link to logo or image of resource"
           />
         </label>
 
-        <label>
-          Zipcode:
-          <input
-            name="zip"
-            onChange={handleZip}
-            value={zip}
-            placeholder="12345"
-          />
-        </label>
-
-        <label>
-          Phone Number:
-          <input
-            name="phone"
-            onChange={handlePhone}
-            value={phone}
-            placeholder="1-800-123-4567"
-          />
-        </label>
-
-        <label>
-          Text Number:
-          <input
-            name="text_num"
-            onChange={handleText}
-            value={text_num}
-            placeholder="(612) 555-1234"
-          />
-        </label>
-
-        <label>
-          Website:
-          <input
-            name="website"
-            onChange={handleWebsite}
-            value={website}
-            placeholder="https://www.companywebsite.org"
-          />
-        </label>
-
-        <label>
-          Email Address:
-          <input
-            name="email"
-            onChange={handleEmail}
-            value={email}
-            placeholder="contact@company.org"
-          />
-        </label>
-
-        <label>
-          Is Available 24/7:
-          <select
-            name="is_24_7"
-            onChange={handleIs247}
-            value={is_24_7}
-          >
-            <option value="true">Yes</option>
-            <option value="false">No</option>
-            <option value="unknown">Unknown</option>
-          </select>
-        </label>
-        <button onClick={() => {location.replace('/');}}>Submit</button>
+        <button onClick={() => {history.push('/resources');}}>Submit</button>
       </form>
     </>
   );
