@@ -1,8 +1,10 @@
-const URL = "https://tbi-resources.herokuapp.com/api/v1/resources";
+// const URL = "https://tbi-resources.herokuapp.com/api/v1/resources";
 
 export const fetchAllResources = async () => {
   try {
-    const res = await fetch(`${URL}`);
+    const res = await fetch(
+      'https://tbi-resources.herokuapp.com/api/v1/resources'
+    );
 
     const resources = await res.json();
     return resources.map((resource) => ({
@@ -21,7 +23,7 @@ export const fetchAllResources = async () => {
 export const fetchOneResource = async (resourceId) => {
   try {
     const res = await fetch(
-      `${URL}/${resourceId}`
+      `https://tbi-resources.herokuapp.com/api/v1/resources/${resourceId}`
     );
     const {
       id,
@@ -48,7 +50,7 @@ export const fetchOneResource = async (resourceId) => {
 export const createResource = async (data) => {
   try {
     const res = await fetch(
-      `${URL}`,
+      'https://tbi-resources.herokuapp.com/api/v1/resources',
       {
         method: "POST",
         body: JSON.stringify(data),
@@ -83,7 +85,7 @@ export const createResource = async (data) => {
 
 export const updateResource = async (id, updatedResource) => {
   const res = await fetch(
-    `${URL}/${id}`,
+    `https://tbi-resources.herokuapp.com/api/v1/resources/${id}`,
     {
       method: "PUT",
       headers: {
@@ -96,8 +98,7 @@ export const updateResource = async (id, updatedResource) => {
 };
 
 export const deleteResource = (id) => {
-  return fetch(
-    `${URL}/${id}`,
-    { method: "DELETE" }
-  ).then((res) => res.json());
+  return fetch(`https://tbi-resources.herokuapp.com/api/v1/resources/${id}`, {
+    method: "DELETE",
+  }).then((res) => res.json());
 };

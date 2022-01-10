@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 export const useCreate = () => {
-  const [title, setTitle] = useState("");
-  const [category, setCategory] = useState("");
-  const [about, setAbout] = useState("");
-  const [link, setLink] = useState("");
-  const [logo, setLogo] = useState("");
+  const [title, setTitle] = useState('');
+  const [category, setCategory] = useState('');
+  const [about, setAbout] = useState('');
+  const [link, setLink] = useState('');
+  const [logo, setLogo] = useState('');
 
   const handleTitle = ({ target }) => {
     setTitle(target.value);

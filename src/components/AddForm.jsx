@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useCreate } from '../hooks/createResource';
-import { createResource } from '../services/apiService';
-import '../styles/AddForm.css';
+import React from "react";
+import PropTypes from "prop-types";
+import { useCreate } from "../hooks/createResource";
+import { createResource } from "../services/apiService";
+import "../styles/AddForm.css";
 
 const AddForm = () => {
   const {
@@ -11,9 +11,9 @@ const AddForm = () => {
     about,
     link,
     logo,
-    handleName,
+    handleTitle,
     handleCategory,
-    handleDescription,
+    handleAbout,
     handleLink,
     handleLogo,
   } = useCreate();
@@ -42,7 +42,7 @@ const AddForm = () => {
           </div>
           <input
             name="title"
-            onChange={handleName}
+            onChange={handleTitle}
             placeholder="Company Inc."
             value={title}
             required
@@ -59,7 +59,9 @@ const AddForm = () => {
             value={category}
             required
           >
-            <option value="" selected disabled>--</option>
+            <option value="" selected disabled>
+              --
+            </option>
             <option value="Accessibility" label="Accessibility"></option>
             <option value="Advocacy" label="Advocacy"></option>
             <option value="Products" label="Products"></option>
@@ -74,7 +76,7 @@ const AddForm = () => {
           </div>
           <textarea
             name="about"
-            onChange={handleDescription}
+            onChange={handleAbout}
             value={about}
             required
             placeholder="Description of resource, such as services offered, symptoms addressed, location, etc."
@@ -82,10 +84,10 @@ const AddForm = () => {
         </label>
 
         <label>
-        <div className="prompt">
-          <h4 className="required">*</h4>
-          <h4>Link to Resource: </h4>
-        </div>
+          <div className="prompt">
+            <h4 className="required">*</h4>
+            <h4>Link to Resource: </h4>
+          </div>
           <input
             name="link"
             className="link"
@@ -95,8 +97,11 @@ const AddForm = () => {
             required
           />
         </label>
-                <label>
-          Logo or Image:
+
+        <label>
+          <div className="prompt">
+              <h4>Logo/Image</h4>
+        </div>
           <input
             name="logo"
             className="logo"
@@ -105,8 +110,9 @@ const AddForm = () => {
             placeholder="http://www.tbi-resource.com"
           />
         </label>
-
+    <p>
         <button type="submit">Submit</button>
+    </p>
       </form>
     </>
   );
