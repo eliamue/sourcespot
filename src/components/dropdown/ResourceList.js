@@ -26,26 +26,30 @@ export default class ImageList extends Component {
         const categoryOptions = Array.from(new Set(resources.map(resources => resources.category)));
 
     return (
-      <div>
+      <div className="main-container">
         <Nav />
-        <label>Filter by Category</label>
-        <Dropdown
-          options={categoryOptions}
-          handleChange={this.handleCategoryChange}
-        />
-
-        <section className="infodump">
-          {resources.map((resources, i) => (
-            <ResourceItem
-              link={resources.link}
-              logo={resources.logo}
-              title={resources.title}
-              about={resources.about}
-              category={resources.category}
-              key={i}
+        <div className="resource-container">
+          <div className="dropdown">
+            <label>Filter by Category</label>
+            <Dropdown
+              options={categoryOptions}
+              handleChange={this.handleCategoryChange}
             />
-          ))}
-        </section>
+          </div>
+
+          <section className="resources">
+            {resources.map((resources, i) => (
+              <ResourceItem
+                link={resources.link}
+                logo={resources.logo}
+                title={resources.title}
+                about={resources.about}
+                category={resources.category}
+                key={i}
+              />
+            ))}
+          </section>
+        </div>
       </div>
     );
     }

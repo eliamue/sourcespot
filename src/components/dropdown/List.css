@@ -1,3 +1,12 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
 .logo {
     height: 200px;
 }
@@ -8,11 +17,18 @@
     align-items: center;
     text-align: center;
     background-color: rgb(66, 30, 75);
-    color: rgb(138, 129, 147);
+    color: rgb(147, 143, 129);
     font-size: 20px;
+    
 }
 
-.description {
+.dropdown {
     margin: 30px;
+    font-size: 30px;
+    color: purple;
+    background-color: orange;
 }
 
+.resource-container {
+    background-color: blue;
+}

@@ -1,11 +1,4 @@
-.home_head {
-  padding: 20px;
-  margin: 20px;
-  color: purple;
-  font-size: 30px;
-}
-
-.home_container {
+.home-container {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -12,6 +12,7 @@ export default class FilterDropdown extends Component {
             <option value="2">Advocacy</option>
             <option value="3">Education</option>
             <option value="4">Products</option>
+            <option value="5">Services</option>
           </select>
         </label>
       </div>

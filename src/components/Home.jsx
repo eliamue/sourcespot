@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import '../styles/App.css';
 import '../styles/Home.css';
 import Nav from './Nav'
+import logo from '../assets/logo.png'
 
 export default class Home extends Component {
     render() {
         return (
-            <div className="App">
+            <div className="home-container">
                 <Nav />
-                <p className="home_head">Home</p>
+                <img src={logo} alt="logo" />
             </div>
         )
     }

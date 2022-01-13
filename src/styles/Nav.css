@@ -1,15 +1,26 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  text-align: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
 .navlinks {
-    text-align: center;
-    justify-content: space-around;
-    color: purple;
+  text-align: center;
+  justify-content: space-around;
+  background-color: aqua;
+  margin: 20px;
 }
 
 a {
-    color: pink;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: space-between;
-    margin: 5px;
-    padding: 5px;
-    padding-top: 10px;
+  color: rgb(73, 7, 57);
+  justify-content: space-around;
+  align-items: center;
+  justify-items: space-between;
+  margin: 5px;
+  padding: 5px;
+  padding-top: 10px;
 }
