@@ -59,6 +59,46 @@ const data = [
     location_specific: true,
     location: "Minnesota",
   },
+  {
+    title: "Brain Trauma Foundation",
+    category: "Education",
+    about:
+      "Since their founding in 1986, Brain Trauma Foundation has worked to improve the outcomes of patients with traumatic brain injuries hrough the development of evidence-based guidelines, groundbreaking research partnerships, and educational outreach.",
+    link: "http://www.braintrauma.org/",
+    logo: "https://www.braintrauma.org/uploads/elements/misc/logo.png",
+    location_specific: false,
+    location: "",
+  },
+  {
+    title: "National Resource Center for Traumatic Brain Injury",
+    category: "Education",
+    about:
+      "The mission of the National Resource Center for Traumatic Brain Injury (NRCTBI) is to provide relevant, practical information for professionals, persons with brain injury, and family members. We have decades of experience investigating the special needs and problems of people with brain injury and their families.  With input from consumers and nationally recognized experts, we have developed a wide variety of assessment tools, intervention programs, and training programs. The NRCTBI is housed at Virginia Commonwealth University’s Medical College of Virginia Campus.  Many of our staff are affiliated with the Virginia Commonwealth Traumatic Brain Injury Model System.",
+    link: "https://tbi.vcu.edu/",
+    logo: "https://tbiresources.partnership.vcu.edu/media/tbi-resources/TBIresourceswebsiteheader_rev111021.png",
+    location_specific: false,
+    location: "",
+  },
+  {
+    title: "Bearable",
+    category: "Products",
+    about:
+      "Mobile app for tracking everything in one place: mood, symptoms, sleep, food, steps, meds, daily activities, appointments, and more! All tracking available in the free version, while the paid version also crunches the data to give you personalized insight into patterns, cycles, and trends in your mood, symptoms, habits, etc. Bearable is fully customizable, has a clean design, is highly user-friendly, and can provide daily prompts to help you remember to log every day.",
+    link: "https://bearable.app",
+    logo: "https://bearable.app/wp-content/uploads/2020/08/Group-3449.jpg",
+    location_specific: false,
+    location: "",
+  },
+  {
+    title: "Twilight",
+    category: "Accessibility",
+    about:
+      "Mobile eye-care app for filtering your phone screen. Unlike other computer or mobile filters, Twilight is highly customizable and allows you to set a fully customized schedule for filtering so you can set the filter by hour, upon an alarm, along with the sun, or to be easily toggled on and off via widget. Provides the ability for extreme filtering, which is especially helping for TBI symptom management as you can make the screen extremely dim and with high intensity of filter color.",
+    link: "http://twilight.urbandroid.org/",
+    logo: "https://play-lh.googleusercontent.com/gxoSf8gKOiXJSkRcMjLXOvntd36Jt8sX5dg8X3vrSjsctjbpReFle797xPnUfNaUm6U",
+    location_specific: false,
+    location: "",
+  },
 ];
 
 export default data;
