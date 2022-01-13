@@ -13,6 +13,12 @@ export default class ImageList extends Component {
 
     handleCategoryChange = (event) => {
         this.setState({ filteredCategories: event.target.value })
+        this.setValue(event.target.value);
+    }
+    
+    handleClear = (event) => {
+      event.preventDefault();
+      this.setState({ filteredCategories: '' })
     }
 
     render() {
@@ -33,10 +39,15 @@ export default class ImageList extends Component {
             <label>Filter by Category</label>
             <Dropdown
               options={categoryOptions}
+              value={this.handleCategoryChange}
               handleChange={this.handleCategoryChange}
+              onClick={this.handleClear}
             />
+            <button onClick={this.handleClear}>
+              Reset
+            </button>
           </div>
-
+        <div className="category-title" value={this.handleCategoryChange}>{this.handleCategoryChange}</div>
           <section className="resources">
             {resources.map((resources, i) => (
               <ResourceItem

@@ -5,7 +5,6 @@ export default class FilterDropdown extends Component {
     return (
       <div>
         <label>
-          Looking for something in particular?
           <select onChange={this.handleCategoryChange}>
             <option value="">All</option>
             <option value="1">Accessibility</option>

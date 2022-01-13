@@ -5,11 +5,10 @@ export default class Dropdown extends Component {
     return (
       <div>
         <label>
-          <select onChange={this.props.handleChange}>
-            <option value="">All</option>
+          <select onChange={this.props.handleChange} className="dropdown_item">
             {this.props.options.map((optionString) => (
               <option value={optionString}>{optionString}</option>
-            ))}
+              ))}
           </select>
         </label>
       </div>

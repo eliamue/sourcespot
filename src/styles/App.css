@@ -7,17 +7,15 @@ html {
   text-align: center;
   overflow-x: hidden;
   bottom: 0;
-  background-color: black;
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  color: gray;
 }
 
 body {
-  background-color: black;
+ background-color: rgb(21, 20, 20);
   height: 100%;
   bottom: 0;
   margin: 0;
