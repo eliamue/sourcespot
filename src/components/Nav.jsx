@@ -7,9 +7,9 @@ export default class Nav extends Component {
     return (
       <div className="nav-container">
         <section className="navlinks">
-          <Link to="/#home">Home</Link>
-          <Link to="/#resources">Resources</Link>
-          <Link to="/#about">About</Link>
+          <Link className="nav-a" to="/#home">Home</Link>
+          <Link className="nav-a" to="/#resources">Resources</Link>
+          <Link className="nav-a" to="/#about">About</Link>
         </section>
       </div>
     );

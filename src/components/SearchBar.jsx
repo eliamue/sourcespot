@@ -19,9 +19,12 @@ export default class SearchBar extends Component {
     const filteredData = data.filter(
       createFilter(this.state.searchTerm, KEYS_TO_FILTERS)
     );
-
+    filteredData.sort(function (a, b) {
+      return a.category-b.category;
+    });
     return (
       <div className="container">
+
         <SearchInput className="search-input" onChange={this.searchUpdated} />
         <ul className="results">
         {filteredData.map((resource) => {
@@ -33,7 +36,7 @@ export default class SearchBar extends Component {
                 title={resource.title}
                 about={resource.about}
                 category={resource.category}
-                id={resource.id}
+                location={resource.location}
               />
             </li>
           );
