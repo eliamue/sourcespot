@@ -1,14 +1,22 @@
 .nav-container {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   justify-content: space-between;
   margin-bottom: 20px;
+  margin-top: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.612);
+  padding: 5px;
+  z-index: 1;
 }
 
 a {
   align-items: center;
   margin: 2vmin;
   padding: 2vmin;
-  color: rgb(84, 173, 179);
+  color: gold;
+}
+
+a:hover {
+  cursor: pointer;
+  color: darkmagenta;
 }

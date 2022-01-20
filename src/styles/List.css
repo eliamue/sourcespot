@@ -10,12 +10,11 @@
   max-height: 18vmin;
   max-width: 30vmin;
   border-radius: 20px;
-  border: 2px double transparent;
-  border: 2px inset rgb(84, 173, 179);
+  border: 5px inset rgb(84, 173, 179);
 }
 
 .logo:hover {
-  border: 2px inset rgb(23, 71, 129);
+  border: 5px inset rgb(23, 71, 129);
 }
 
 .resources {
@@ -25,11 +24,16 @@
   color: rgb(122, 122, 244);
   flex-wrap: wrap;
   word-wrap: normal;
-  border: 2px rgb(84, 173, 179) solid;
+  border: 3px rgb(92, 76, 34) inset;
   border-radius: 20px;
   max-width: 40vmin;
   max-height: 70vmin;
   align-content: center;
+  background-color: rgb(39, 2, 46);
+}
+
+.resources:hover {
+  background-color: rgb(2, 34, 46);
 }
 /* 
 .dropdown {
@@ -137,4 +141,15 @@ li {
     justify-content: flex-start;
     margin: 1vmin;
     font-size: 1.5vmin;
+}
+
+.main-logo {
+  width: 50%;
+}
+
+.list-header {
+  color: rgb(122, 195, 244);
+  font-size: 7vmin;
+  margin-top: 20px;
+  padding-top: 20px;
 }
