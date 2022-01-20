@@ -99,6 +99,16 @@ const data = [
     location_specific: false,
     location: "",
   },
+  {
+    title: "OpenDyslexic",
+    category: "Accessibility",
+    about:
+      "Free, downloadable typeface that reduces the symptoms of dyslexia. This app uses this font!",
+    link: "https://opendyslexic.org/",
+    logo: "https://d144mzi0q5mijx.cloudfront.net/img/O/P/OpenDyslexic.png",
+    location_specific: false,
+    location: "",
+  },
 ];
 
 export default data;

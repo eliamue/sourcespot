@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import SearchInput, { createFilter } from "react-search-input";
-import data from '../dropdown/data.js';
-import ResourceItem from '../dropdown/ResourceItem.js';
-import Nav from '../Nav.jsx';
-import "../dropdown/List.css";
+import data from './data.js';
+import ResourceItem from './ResourceItem.js';
+import "../styles/List.css";
 
 const KEYS_TO_FILTERS = ["title", "about", "category"];
 
@@ -23,7 +22,6 @@ export default class SearchBar extends Component {
 
     return (
       <div className="container">
-        <Nav />
         <SearchInput className="search-input" onChange={this.searchUpdated} />
         <ul className="results">
         {filteredData.map((resource) => {

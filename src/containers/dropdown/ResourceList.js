@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import ResourceItem from './ResourceItem.js';
-import data from './data.js';
+import ResourceItem from '../../components/ResourceItem.js';
+import data from '../../components/data.js';
 import Dropdown from './Dropdown.js';
-import Nav from '../Nav.jsx';
-import './List.css';
+import Nav from 'Nav.jsx';
+import 'List.css';
 
 export default class ImageList extends Component {
 
