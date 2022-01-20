@@ -1,7 +1,6 @@
 import React from 'react';
 import Resource from './Resource';
 import { useAllResources } from '../../hooks/useAllResources';
-import '../../styles/Resources.css';
 
 const spinner =
   'https://www.indiasentinels.com/LoaderIcon.gif';

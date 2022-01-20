@@ -7,6 +7,7 @@ import Resources from "./components/resources/Resources";
 import ResourceDetail from "./components/resources/ResourceDetail";
 import EditResource from "./components/resources/EditResource";
 import ResourceList from "./components/dropdown/ResourceList";
+import SearchBar from "./components/search-input/SearchBar";
 
 export default function App() {
   return (
@@ -33,6 +34,9 @@ export default function App() {
           </Route>
           <Route exact path="/about">
             <About />
+          </Route>
+          <Route exact path="/search">
+            <SearchBar />
           </Route>
         </Switch>
       </BrowserRouter>

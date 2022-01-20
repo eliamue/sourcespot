@@ -8,7 +8,7 @@ export default class Nav extends Component {
       <div className="nav-container">
         <section className="navlinks">
           <Link to="/">Home</Link>
-          <Link to="/resourcelist">Resources</Link>
+          <Link to="/search">Resources</Link>
           <Link to="/about">About</Link>
         </section>
       </div>

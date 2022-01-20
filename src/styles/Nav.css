@@ -4,12 +4,11 @@
   width: 100%;
   justify-content: space-between;
   margin-bottom: 20px;
-  color: rgb(132, 149, 182);
 }
 
 a {
   align-items: center;
-  margin: 5px;
-  padding: 5px;
-  color: rgb(132, 149, 182);
+  margin: 2vmin;
+  padding: 2vmin;
+  color: rgb(84, 173, 179);
 }

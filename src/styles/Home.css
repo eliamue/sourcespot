@@ -4,10 +4,12 @@
   align-items: center;
   padding: 20px;
   margin: 20px;
+  font-family: 'OpenDyslexic';
+    background-color: black;
 }
 
 .home-header {
-  color: rgb(122, 122, 244);
+  color: rgb(122, 195, 244);
   font-size: 9vmin;
   margin-top: 20px;
 }
@@ -17,5 +19,5 @@
 }
 
 .home-description {
-  color:rgb(122, 122, 244);
+  color:rgb(146, 68, 152);
 }

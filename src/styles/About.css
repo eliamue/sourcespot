@@ -3,7 +3,17 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
     margin: 20px;
-    color: rgb(122, 122, 244);
+}
+.sug-header {
+  color: rgb(122, 195, 244);
+}
+
+.sug-description {
+      color:rgb(146, 68, 152);
+      font-size: 15px;
+}
+
+.e-link {
+    height: 100px;
 }
