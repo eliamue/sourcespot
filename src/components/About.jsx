@@ -26,9 +26,9 @@ export default class About extends Component {
             </p>
             </section>
             <section className="my-links">
-              <a href="https://www.linkedin.com/in/eliamue/" alt="LinkedIn">LinkedIn</a>
-              <a href="https://github.com/eliamue" alt="LinkedIn">GitHub</a>
-              <a href="https://eliamue.netlify.app/" alt="LinkedIn">Portfolio</a>
+              <a className="my-a" href="https://www.linkedin.com/in/eliamue/" alt="LinkedIn">LinkedIn</a>
+              <a className="my-a" href="https://github.com/eliamue" alt="LinkedIn">GitHub</a>
+              <a className="my-a" href="https://eliamue.netlify.app/" alt="LinkedIn">Portfolio</a>
             </section>
             <h1 className="sug-header">Have a Suggestion?</h1>
           <section className="sug-description">

@@ -11,12 +11,15 @@
 
 a {
   align-items: center;
-  margin: 2vmin;
-  padding: 2vmin;
   color: gold;
 }
 
 a:hover {
   cursor: pointer;
   color: darkmagenta;
+}
+
+.nav-a {
+  margin: 2vmin;
+  padding: 2vmin;
 }

@@ -21,8 +21,10 @@ export default class Home extends Component {
         <section id="resources">
           <div className="list-header">
             <h1 className="list-title">Resources</h1>
-            <p className="home-description">
-              Search for a resource by keyword or category
+            <p className="resources-prompt">
+              Search for a resource by keyword or filter by category: 
+              <br></br>
+              Accessibility - advocacy - education - products - services
             </p>
           </div>
           <SearchBar />

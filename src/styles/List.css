@@ -11,6 +11,7 @@
   max-width: 30vmin;
   border-radius: 20px;
   border: 5px inset rgb(84, 173, 179);
+  padding: 0;
 }
 
 .logo:hover {
@@ -156,7 +157,7 @@ li {
   margin-bottom: 0;
 }
 
-.search-prompt {
+.resources-prompt {
   color: rgb(122, 122, 244);
-  font-size: 2vmin;
+  font-size: 1.8vmin;
 }
