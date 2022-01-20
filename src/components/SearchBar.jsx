@@ -22,6 +22,7 @@ export default class SearchBar extends Component {
 
     return (
       <div className="container">
+  
         <SearchInput className="search-input" onChange={this.searchUpdated} />
         <ul className="results">
         {filteredData.map((resource) => {
@@ -33,7 +34,6 @@ export default class SearchBar extends Component {
                 title={resource.title}
                 about={resource.about}
                 category={resource.category}
-                id={resource.id}
               />
             </li>
           );

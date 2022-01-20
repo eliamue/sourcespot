@@ -19,13 +19,19 @@ export default class Home extends Component {
         </section>
         <img src={logo} className="main-logo" alt="logo" />
         <section id="resources">
-            <h1 className="list-header">Resources</h1>
+          <div className="list-header">
+            <h1 className="list-title">Resources</h1>
+            <p className="home-description">
+              Search for a resource by keyword or category
+            </p>
+          </div>
           <SearchBar />
         </section>
         <img src={logo} className="main-logo" alt="logo" />
         <section id="about">
           <About />
         </section>
+        <footer>Elise Muellerleile &copy; 2021</footer>
       </div>
     );
   }

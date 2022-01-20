@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin: 20px 20px 300px 20px;
+    margin: 20px 20px 50px 20px;
     text-align: center;
 }
 .about-header {
@@ -15,8 +14,13 @@
 .about-me, .sug-description {
       color:rgb(146, 68, 152);
       font-size: 1.8vmin;
-      width: 70vmin;
+      width: 85vmin;
       text-align: center;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
 }
 
 .sug-header {
@@ -32,4 +36,15 @@
 
 .my-links, .e-link {
   font-size: 2vmin;
+  margin-bottom: 10vmin;
+}
+
+.blurb {
+  padding: 3vmin;
+  margin: 3vmin;
+  border: 2px inset rgb(84, 173, 179);
+  border-radius: 20px;
+  align-self: center;
+  text-align: center;
+  width: 30vmin;
 }
