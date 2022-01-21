@@ -3,7 +3,7 @@ import "../styles/Home.css";
 import Nav from "./Nav.jsx";
 import logo from "../assets/logo.png";
 import anilogo from "../assets/sourcespot-logo.gif";
-import SearchBar from "./SearchBar.jsx";
+import SearchList from "./SearchList.jsx";
 import About from "./About";
 
 export default class Home extends Component {
@@ -28,7 +28,7 @@ export default class Home extends Component {
               Accessibility - Advocacy - Education - Legal - Products - Services
             </p>
           </div>
-          <SearchBar />
+          <SearchList />
         </section>
         <img src={logo} className="main-logo" alt="logo" />
         <section id="about">
