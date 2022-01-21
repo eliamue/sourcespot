@@ -63,7 +63,7 @@ const data = [
     title: "Concussion Alliance",
     category: "Education",
     about:
-      "Concussion Alliance is an education and advocacy nonprofit that helps concussion patients learn how to manage their recovery and find treatment options to navigate a path to wellness. ",
+      "Concussion Alliance is an education and advocacy nonprofit that helps concussion patients learn to manage their recovery and find treatment options. ",
     link: "https://www.concussionalliance.org/",
     logo: "https://images.squarespace-cdn.com/content/v1/59979fb48419c2c65c51fe21/4352a9be-5f60-40e7-a411-11be6a4ce9af/NEW+LOGO+DARKER+BLUE.png?format=1500w",
     location_specific: false,
@@ -103,7 +103,7 @@ const data = [
     title: "Lucky Edibles Microdose Mints",
     category: "Products",
     about:
-      "These tasty little mints each provide a microdose of just 2mg of THC each, are easy to carry with you, and can provide symptom relief in about 45 minutes with minimal cognitive effect.",
+      "These tasty little mints are just a 2mg microdose of THC each, are easy to carry with you, and can provide symptom relief in about 45 minutes with minimal cognitive effect.",
     link: "https://www.luckyedibles.com/",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbWfDTJxIMTiKxGkFfTtC6Ko2D36ySfIjBmOE5AsddCNCAOSSuYqp8jY1xrgwPQ3HWw&usqp=CAU",
     location_specific: false,
