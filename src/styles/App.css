@@ -1,11 +1,28 @@
 @font-face {
   font-family: 'OpenDyslexic';
-  src: url('OpenDyslexic-Regular.eot'); /* IE9+ Compat Modes */
-  src: url('OpenDyslexic-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('OpenDyslexic-Regular.woff2') format('woff2'), /* Super modern browsers */
-       url('OpenDyslexic-Regular.woff') format('woff'), /* Modern browsers */
-       url('OpenDyslexic-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('OpenDyslexic-Regular.svg#OpenDyslexic-Regular') format('svg'); /* Legacy iOS */
+  src: local('OpenDyslexic-Regular'), url('OpenDyslexic-Regular.eot'); /* IE9+ Compat Modes */
+  src: local('OpenDyslexic-Regular'), url('OpenDyslexic-Regular.eot?#iefix') format('embedded-opentype') /* IE6-IE8 */
+  local('OpenDyslexic-Regular'), url('OpenDyslexic-Regular.woff2') format('woff2'), /* Super modern browsers */
+  local('OpenDyslexic-Regular'), url('OpenDyslexic-Regular.woff') format('woff'), /* Modern browsers */
+  local('OpenDyslexic-Regular'), url('OpenDyslexic-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  local('OpenDyslexic-Regular'), url('OpenDyslexic-Regular.svg#OpenDyslexic-Regular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: local('OpenDyslexic-Regular'), url(./fonts/OpenDyslexic-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: local('OpenDyslexic-Regular'), url(./fonts/OpenDyslexic-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: local('OpenDyslexic-Regular'), url(./fonts/OpenDyslexic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: local('OpenDyslexic-Regular'), url(./fonts/OpenDyslexic-Regular.svg#OpenDyslexic-Regular) format('svg');
 }
 
 html {
