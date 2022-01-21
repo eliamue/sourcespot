@@ -105,7 +105,7 @@ const data = [
     about:
       "These tasty little mints each provide a microdose of just 2mg of THC each, are easy to carry with you, and can provide symptom relief in about 45 minutes with minimal cognitive effect.",
     link: "https://www.luckyedibles.com/",
-    logo: "http://lodowellnesscenter.com/wp-content/uploads/2019/11/57395868_909269809404196_808712590598340608_n.jpg",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbWfDTJxIMTiKxGkFfTtC6Ko2D36ySfIjBmOE5AsddCNCAOSSuYqp8jY1xrgwPQ3HWw&usqp=CAU",
     location_specific: false,
     location: ": CO & NV",
   },
