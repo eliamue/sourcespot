@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import "./styles/App.css";
-import "./styles/opendyslexic/stylesheet.css";
+import "./styles/stylesheet.css";
 
 export default function App() {
   return (
