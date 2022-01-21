@@ -14,7 +14,6 @@
 .about-me, .sug-description {
       color:rgb(146, 68, 152);
       font-size: 1.8vmin;
-      width: 85vmin;
       text-align: center;
 }
 
@@ -46,10 +45,18 @@
   border-radius: 20px;
   align-self: center;
   text-align: center;
-  width: 30vmin;
 }
 
 .my-a {
   margin: 2vmin;
   padding: 2vmin;
+}
+
+.sug-description {
+  padding: 3vmin;
+  margin: 3vmin;
+  border: 2px inset rgb(84, 173, 179);
+  border-radius: 20px;
+  align-self: center;
+  text-align: center;
 }
