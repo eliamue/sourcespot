@@ -27,7 +27,7 @@
   word-wrap: normal;
   border: 3px rgb(92, 76, 34) inset;
   border-radius: 20px;
-  max-width: 40vmin;
+  max-width: 45vmin;
   max-height: 70vmin;
   align-content: center;
   background-color: rgb(39, 2, 46);
@@ -59,12 +59,12 @@
 }
 
 .src-title {
-  font-size: 2vmin;
+  font-size: 3vmin;
   color: rgb(122, 195, 244);
 }
 
 .description {
-  font-size: 1.8vmin;
+  font-size: 2.5vmin;
   padding: 0.2vmin;
   color: rgb(146, 68, 152);
 }
@@ -141,7 +141,7 @@ li {
 .category-tag {
   justify-content: flex-start;
   margin: 1vmin;
-  font-size: 1.5vmin;
+  font-size: 2vmin;
 }
 
 .main-logo {
@@ -160,5 +160,5 @@ li {
 
 .resources-prompt {
   color: rgb(122, 122, 244);
-  font-size: 1.8vmin;
+  font-size: 3vmin;
 }
