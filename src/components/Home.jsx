@@ -3,7 +3,7 @@ import "../styles/Home.css";
 import Nav from "./Nav.jsx";
 import logo from "../assets/logo.png";
 import anilogo from "../assets/sourcespot-logo.gif";
-import SearchBar from "./SearchBar.jsx";
+import SearchList from "./SearchList.jsx";
 import About from "./About";
 
 export default class Home extends Component {
@@ -15,7 +15,7 @@ export default class Home extends Component {
           <header className="home-header"><img src={anilogo} className="ani-logo" alt="sourceSPOT logo" /></header>
           <p className="home-description">
             A one-stop shop for resources to help TBI survivors with recovery,
-            symptom management, and accessibility in day-to-day life.
+            symptom management, and accessibility in day-to-day life. From technologies to reduce symptoms caused by bright white screens to products to help manage overstimulation, sourceSPOT compiles quality resources for improving life with a brain injury.
           </p>
         </section>
         <img src={logo} className="main-logo" alt="logo" />
@@ -28,13 +28,13 @@ export default class Home extends Component {
               Accessibility - Advocacy - Education - Legal - Products - Services
             </p>
           </div>
-          <SearchBar />
+          <SearchList />
         </section>
         <img src={logo} className="main-logo" alt="logo" />
         <section id="about">
           <About />
         </section>
-        <footer>Elise Muellerleile &copy; 2021</footer>
+        <footer>Elise Muellerleile &copy; 2022</footer>
       </div>
     );
   }

@@ -13,8 +13,14 @@
 
 .home-description {
   color: rgb(146, 68, 152);
+  font-size: 2.5vmin;
   width: 80vmin;
   text-align: center;
+  padding: 3vmin;
+  margin: 3vmin;
+  border: 2px inset rgb(84, 173, 179);
+  border-radius: 20px;
+  align-self: center;
 }
 
 footer {

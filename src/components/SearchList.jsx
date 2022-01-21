@@ -6,7 +6,7 @@ import "../styles/List.css";
 
 const KEYS_TO_FILTERS = ["title", "about", "category"];
 
-export default class SearchBar extends Component {
+export default class SearchList extends Component {
   constructor(props) {
     super(props);
     this.state = {
