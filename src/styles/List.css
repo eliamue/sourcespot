@@ -10,12 +10,12 @@
   max-height: 18vmin;
   max-width: 30vmin;
   border-radius: 20px;
-  border: 5px inset rgb(84, 173, 179);
+  border: 3px inset rgb(84, 173, 179);
   padding: 0;
 }
 
 .logo:hover {
-  border: 5px inset rgb(23, 71, 129);
+  border: 3px inset rgb(23, 71, 129);
 }
 
 .resources {
@@ -145,8 +145,9 @@ li {
 }
 
 .main-logo {
-  width: 50%;
-  margin: 20px 0px 20px 0px;
+  width: 20%;
+  margin: 50px 0px 20px 0px;
+  opacity: .4;
 }
 
 .list-title {

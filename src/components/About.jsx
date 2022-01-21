@@ -15,9 +15,7 @@ export default class About extends Component {
           <img src={me} className="me" alt="Elise Muellerleile" />
           <section className="about-me">
             <p className="blurb">
-              I'm Elise Muellerleile, a full-stack software engineer from St Paul, Minnesota with a background in psychology, CCBHC mental health, and board game publishing. My goal is to combine this background with software development in order to work with a team on creating and maintaining inclusive apps that accommodate the needs of marginalized communities.
-            </p>
-            <p className="blurb">
+              I'm Elise Muellerleile, a full-stack software engineer from St Paul, Minnesota.
               As a TBI surviver myself, I know how crucial good resources are to
               recovery and symptom management. I created this site in order to
               compile a list of resources that either personally helped me in
@@ -33,9 +31,9 @@ export default class About extends Component {
             <h1 className="sug-header">Have a Suggestion?</h1>
           <section className="sug-description">
             <p>
-              Big or small, input is always welcome as this site is actively in development. Whether you have a resource
+              Big or small, input is always welcome as sourceSPOT is actively in development. Whether you have a resource
               you'd like to see added to the list, have a suggestion for
-              improving the site's accessibility, or found a dead link, please
+              improving accessibility, or found a dead link, please
               reach out!
             </p>
           </section>

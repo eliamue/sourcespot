@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../styles/Home.css";
 import Nav from "./Nav.jsx";
 import logo from "../assets/logo.png";
+import anilogo from "../assets/sourcespot-logo.gif";
 import SearchBar from "./SearchBar.jsx";
 import About from "./About";
 
@@ -11,7 +12,7 @@ export default class Home extends Component {
       <div className="full-body">
         <section id="home" className="home-container">
           <Nav />
-          <header className="home-header">TBI Resources</header>
+          <header className="home-header"><img src={anilogo} className="ani-logo" alt="sourceSPOT logo" /></header>
           <p className="home-description">
             A one-stop shop for resources to help TBI survivors with recovery,
             symptom management, and accessibility in day-to-day life.
@@ -24,7 +25,7 @@ export default class Home extends Component {
             <p className="resources-prompt">
               Search for a resource by keyword or filter by category: 
               <br></br>
-              Accessibility - advocacy - education - products - services
+              Accessibility - Advocacy - Education - Legal - Products - Services
             </p>
           </div>
           <SearchBar />
