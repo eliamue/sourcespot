@@ -9,12 +9,13 @@
   color: rgb(122, 195, 244);
   font-size: 7vmin;
   margin-top: 20px;
+  padding-top: 20px;
 }
 
 .about-me,
 .sug-description {
   color: rgb(146, 68, 152);
-  font-size: 1.8vmin;
+  font-size: 3vmin;
   text-align: center;
 }
 
@@ -36,7 +37,7 @@
 
 .my-links,
 .e-link {
-  font-size: 2vmin;
+  font-size: 3vmin;
   margin-bottom: 10vmin;
 }
 

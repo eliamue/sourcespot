@@ -13,7 +13,7 @@
 
 .home-description {
   color: rgb(146, 68, 152);
-  font-size: 2.5vmin;
+  font-size: 3vmin;
   width: 80vmin;
   text-align: center;
   padding: 3vmin;
@@ -24,7 +24,7 @@
 }
 
 footer {
-  font-size: 1.8vmin;
+  font-size: 2vmin;
   padding: 5px;
   color: rgb(83, 77, 120);
 }
