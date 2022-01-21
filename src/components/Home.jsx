@@ -15,7 +15,7 @@ export default class Home extends Component {
           <header className="home-header"><img src={anilogo} className="ani-logo" alt="sourceSPOT logo" /></header>
           <p className="home-description">
             A one-stop shop for resources to help TBI survivors with recovery,
-            symptom management, and accessibility in day-to-day life.
+            symptom management, and accessibility in day-to-day life. From technologies to help manage symptoms caused by bright white screens to 
           </p>
         </section>
         <img src={logo} className="main-logo" alt="logo" />

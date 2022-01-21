@@ -60,6 +60,16 @@ const data = [
     location: "",
   },
   {
+    title: "Concussion Alliance",
+    category: "Education",
+    about:
+      "Concussion Alliance is an education and advocacy nonprofit that helps concussion patients learn how to manage their recovery and find treatment options to navigate a path to wellness. ",
+    link: "https://www.concussionalliance.org/",
+    logo: "https://images.squarespace-cdn.com/content/v1/59979fb48419c2c65c51fe21/4352a9be-5f60-40e7-a411-11be6a4ce9af/NEW+LOGO+DARKER+BLUE.png?format=1500w",
+    location_specific: false,
+    location: "",
+  },
+  {
     title: "National Resource Center for Traumatic Brain Injury",
     category: "Education",
     about:
@@ -90,12 +100,32 @@ const data = [
     location: "",
   },
   {
+    title: "Lucky Edibles Microdose Mints",
+    category: "Products",
+    about:
+      "These tasty little mints each provide a microdose of just 2mg of THC each, are easy to carry with you, and can provide symptom relief in about 45 minutes with minimal cognitive effect.",
+    link: "https://www.luckyedibles.com/",
+    logo: "http://lodowellnesscenter.com/wp-content/uploads/2019/11/57395868_909269809404196_808712590598340608_n.jpg",
+    location_specific: false,
+    location: ": CO & NV",
+  },
+  {
     title: "Hearprotek Earplugs",
     category: "Products",
     about:
-      "Set of 2 silicone high fidelity 20db earplugs that effectively brings down the overall volume, while still preserving sound quality. Comes with a durable aluminum clip-on case.",
+      "Set of 2 silicone high fidelity 20db earplugs that effectively brings down the overall volume, while still preserving sound quality. Comes with a super-durable aluminum clip-on case.",
     link: "https://www.amazon.com/gp/product/B08PBQFQH6/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1",
     logo: "https://m.media-amazon.com/images/I/61pjAx7azgL._AC_SL1080_.jpg",
+    location_specific: false,
+    location: "",
+  },
+  {
+    title: "Reusable Gel Eye Masks",
+    category: "Products",
+    about:
+      "Two individual little kitty faces that can be heated or chilled to relieve eye pain and pressure. Unlike single-piece masks, these can be placed in targeted spots to best suit your needs.",
+    link: "https://www.worldmarket.com/product/reusable-cat-gel-eye-masks-2-pack.do",
+    logo: "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/82728_XXX_v1.tif&wid=2000&cvt=jpeg",
     location_specific: false,
     location: "",
   },
