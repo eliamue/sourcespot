@@ -31,7 +31,7 @@ export default class Home extends Component {
           </p>
           </div>
         </section>
-        <img src={logo} className="main-logo" alt="logo" />
+        <img src={logo} id="resourcelist" className="main-logo" alt="logo" />
         <section id="resources">
           <div className="list-header">
             <h1 className="list-title">Resources</h1>

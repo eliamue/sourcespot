@@ -12,7 +12,7 @@ export default class Nav extends Component {
           <Link className="nav-a" to="/#home">
             Home
           </Link>
-          <Link className="nav-a" to="/#resources">
+          <Link className="nav-a" to="/#resourcelist">
             Resources
           </Link>
           <Link className="nav-a" to="/#about">
