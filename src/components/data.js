@@ -87,7 +87,7 @@ const data = [
     link: "https://schroeder-mandel.com/",
     logo: "https://media-exp1.licdn.com/dms/image/C5612AQEggkuEHNblKA/article-inline_image-shrink_1500_2232/0/1520188627674?e=1645056000&v=beta&t=qcok-oIuLoKDkgd0OXGbyK3aYbQawRAMEA8LG6x8RZo",
     location_specific: false,
-    location: ": MN",
+    location: "*MN only",
   },
   {
     title: "Bearable",
@@ -107,7 +107,7 @@ const data = [
     link: "https://www.luckyedibles.com/",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbWfDTJxIMTiKxGkFfTtC6Ko2D36ySfIjBmOE5AsddCNCAOSSuYqp8jY1xrgwPQ3HWw&usqp=CAU",
     location_specific: false,
-    location: ": CO & NV",
+    location: "*CO & NV only",
   },
   {
     title: "Hearprotek Earplugs",
@@ -137,7 +137,7 @@ const data = [
     link: "https://account.allinahealth.org/services/591",
     logo: "https://adaptiveadventures.org/wp-content/uploads/2017/05/Courage-Kenny-Logo.jpg",
     location_specific: true,
-    location: ": MN",
+    location: "*MN only",
   },
   {
     title: "Hennepin Health Traumatic Brain Injury Center",
@@ -147,7 +147,7 @@ const data = [
     link: "https://www.hennepinhealthcare.org/specialty/traumatic-brain-injury-center/",
     logo: "https://hereforlife.blog/wp-content/uploads/2018/03/featured-hennepin-healthcare-promo.jpg",
     location_specific: true,
-    location: ": MN",
+    location: "*MN only",
   },
 ];
 

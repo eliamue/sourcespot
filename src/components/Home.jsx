@@ -12,13 +12,16 @@ export default class Home extends Component {
       <div className="full-body">
         <section id="home" className="home-container">
           <Nav />
-          <header className="home-header">
+          <div className="home-description">
+          <header className="page-head">
+            <div className="title1">SOURCE</div><div className="title2">SPOT</div>
+          </header>
             <p>
               A one-stop shop for resources to help TBI survivors with recovery,
               symptom management, and accessibility in day-to-day life.
             </p>
-          </header>
-          <p className="home-description">
+          
+          <p>
             <img src={headache} alt="Person with headache" />
             <p>
               From technologies to reduce symptoms caused by bright white
@@ -26,6 +29,7 @@ export default class Home extends Component {
               compiles quality resources for improving life with a brain injury.
             </p>
           </p>
+          </div>
         </section>
         <img src={logo} className="main-logo" alt="logo" />
         <section id="resources">
