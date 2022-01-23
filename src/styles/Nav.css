@@ -1,16 +1,17 @@
 .nav-container {
+  display: flex;
+  flex-direction: row;
   width: 100%;
+  height: fit-content;
   justify-content: space-between;
-  margin-bottom: 20px;
-  margin-top: 0;
+  align-items: center;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.612);
-  padding-top: 20px;
+  background-color: rgb(18, 17, 17);
   z-index: 1;
+  box-shadow: black 5px 5px 15px;
 }
 
 a {
-  align-items: center;
   color: gold;
 }
 
@@ -22,4 +23,10 @@ a:hover {
 .nav-a {
   margin: 2vmin;
   padding: 2vmin;
+  font-family: Tahoma, sans-serif;
+}
+
+.nav-logo {
+  height: 80px;
+  margin-left: 20px;
 }

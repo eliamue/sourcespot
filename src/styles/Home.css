@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   font-family: "OpenDyslexic";
-  background-color: rgb(46, 46, 46);
 }
 
 .ani-logo {
@@ -13,14 +12,16 @@
 
 .home-description {
   color: rgb(146, 68, 152);
-  font-size: 3vmin;
+  font-size: .875rem;
   width: 80vmin;
   text-align: center;
   padding: 3vmin;
   margin: 3vmin;
-  border: 2px inset rgb(84, 173, 179);
+  background-color: rgb(18, 17, 17);
   border-radius: 20px;
   align-self: center;
+  max-width: 80vmin;
+  box-shadow: black 5px 5px 5px;
 }
 
 footer {

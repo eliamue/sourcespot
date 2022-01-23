@@ -133,7 +133,7 @@ const data = [
     title: "Allina Health: Courage Kenny Rehabilitation Institute",
     category: "Services",
     about:
-      "Inpatient, outpatient and community-based services, including neuro-ophthalmology.",
+      "Inpatient, outpatient and community-based services, including neuroophthalmology.",
     link: "https://account.allinahealth.org/services/591",
     logo: "https://adaptiveadventures.org/wp-content/uploads/2017/05/Courage-Kenny-Logo.jpg",
     location_specific: true,
