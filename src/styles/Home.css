@@ -11,7 +11,7 @@
 }
 
 .home-description {
-  color: rgb(146, 68, 152);
+  color: rgb(186, 165, 186);
   font-size: .875rem;
   width: 80vmin;
   text-align: center;
@@ -28,6 +28,9 @@ footer {
   font-size: 2vmin;
   padding: 5px;
   color: rgb(83, 77, 120);
+  margin-top: 100px;
+  background-color: rgb(18, 17, 17);
+  box-shadow: black 2px 15px 15px 20px;
 }
 
 .list-header {

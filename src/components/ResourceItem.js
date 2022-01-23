@@ -5,7 +5,7 @@ export default class ResourceItem extends Component {
     return (
       <div className="resources">
         <p className="category-tag">
-          {this.props.category}
+          <img src={`${process.env.PUBLIC_URL}/${this.props.category}.png`} className="category-icon" alt={this.props.category}/>
           {this.props.location}
         </p>
         <h2 className="src-title">{this.props.title}</h2>
