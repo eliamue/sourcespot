@@ -2,20 +2,27 @@
   display: flex;
   flex-direction: row;
   text-align: center;
-  background-color: rgb(21, 20, 20);
   flex-wrap: wrap;
 }
 
 .logo {
   max-height: 18vmin;
-  max-width: 30vmin;
+  max-width: 25vmin;
   border-radius: 20px;
-  border: 3px inset rgb(84, 173, 179);
   padding: 0;
 }
 
-.logo:hover {
-  border: 3px inset rgb(23, 71, 129);
+.list-title {
+  color: rgb(122, 195, 244);
+  font-size: 25px;
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.resources-prompt {
+  color: rgb(122, 122, 244);
+  font-size: 18px;
 }
 
 .resources {
@@ -25,16 +32,33 @@
   color: rgb(122, 122, 244);
   flex-wrap: wrap;
   word-wrap: normal;
-  border: 3px rgb(92, 76, 34) inset;
   border-radius: 20px;
-  max-width: 45vmin;
+  max-width: 30vmin;
   align-content: center;
-  background-color: rgb(39, 2, 46);
+  background-color: rgb(26, 25, 25);
 }
 
 .resources:hover {
-  background-color: rgb(2, 34, 46);
+  background-color: rgb(14, 14, 14);
 }
+
+.category-tag {
+  justify-content: flex-start;
+  margin: 1vmin;
+  font-size: .9rem;
+}
+
+.src-title {
+  font-size: 1rem;
+  color: rgb(122, 195, 244);
+}
+
+.description {
+  font-size: .875rem;
+  padding: 16px;
+  color: rgb(186, 165, 186);
+}
+
 /* 
 .dropdown {
     margin: 5vmin;
@@ -44,29 +68,17 @@
 } */
 
 .resource-container {
-  background-color: rgb(21, 20, 20);
   display: flex;
   flex-direction: row;
   list-style-type: none;
   text-align: center;
   flex-wrap: wrap;
-  background-color: black;
 }
 
 .dropdown_item {
   background-color: rgb(93, 116, 176);
 }
 
-.src-title {
-  font-size: 3vmin;
-  color: rgb(122, 195, 244);
-}
-
-.description {
-  font-size: 2.5vmin;
-  padding: 0.2vmin;
-  color: rgb(146, 68, 152);
-}
 
 .searchresult {
   display: flex;
@@ -83,7 +95,6 @@
   list-style-type: none;
   text-align: center;
   flex-wrap: wrap;
-  background-color: black;
   justify-content: center;
   text-align: center;
 }
@@ -137,27 +148,10 @@ li {
   margin: 0;
 }
 
-.category-tag {
-  justify-content: flex-start;
-  margin: 1vmin;
-  font-size: 2vmin;
-}
-
 .main-logo {
   width: 20%;
   margin: 50px 0px 20px 0px;
   opacity: 0.4;
 }
 
-.list-title {
-  color: rgb(122, 195, 244);
-  font-size: 7vmin;
-  margin-top: 20px;
-  padding-top: 20px;
-  margin-bottom: 0;
-}
 
-.resources-prompt {
-  color: rgb(122, 122, 244);
-  font-size: 3vmin;
-}
