@@ -19,6 +19,7 @@
   box-shadow: black 5px 5px 5px;
   border-radius: 20px;
   margin: 30px;
+  filter: brightness(90%);
 }
 
 .list-title {
@@ -38,7 +39,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: rgb(186, 165, 186);
+  color: rgb(225, 221, 225);
   flex-wrap: wrap;
   word-wrap: normal;
   border-radius: 20px;
@@ -46,6 +47,7 @@
   align-content: center;
   background-color: rgb(18, 17, 17);
   box-shadow: black 5px 5px 5px;
+  filter: brightness(90%);
 }
 
 .resources:hover {
@@ -171,6 +173,7 @@
   padding: 5px 10px 5px 25px;
   height: 32px;
   position: relative;
+  background-color: rgb(220, 213, 213);
 }
 
 .search-input > input:focus {

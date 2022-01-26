@@ -1,6 +1,7 @@
 .about-sug-container {
   display: flex;
   flex-direction: row;
+  filter: brightness(90%);
 }
 
 .profile {
@@ -14,6 +15,7 @@
   align-items: center;
   align-self: center;
   margin: 50px 10px 50px 10px;
+  filter: brightness(90%);
 }
 
 @media (max-width: 780px) {
@@ -45,7 +47,7 @@
 }
 
 .about-header {
-color: rgb(242, 238, 242);
+  color: rgb(242, 238, 242);
   font-size: 25px;
 }
 
@@ -72,6 +74,6 @@ color: rgb(242, 238, 242);
 }
 
 .sug-header {
-color: rgb(242, 238, 242);
+  color: rgb(242, 238, 242);
   font-size: 20px;
 }

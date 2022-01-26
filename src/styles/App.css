@@ -1,11 +1,13 @@
 @font-face {
-  font-family: 'OpenDyslexic';
-  src: local('OpenDyslexic-Regular'), url(OpenDyslexic-Regular.eot); /* IE9+ Compat Modes */
-  src: local('OpenDyslexic-Regular'), url(OpenDyslexic-Regular.eot?#iefix) format('embedded-opentype') /* IE6-IE8 */ 
-  url(OpenDyslexic-Regular.woff2) format('woff2'), /* Super modern browsers */ 
-  url(OpenDyslexic-Regular.woff) format('woff'), /* Modern browsers */ 
-  url(OpenDyslexic-Regular.ttf)  format('truetype'), /* Safari, Android, iOS */ 
-  url(OpenDyslexic-Regular.svg#OpenDyslexic-Regular) format('svg'); /* Legacy iOS */
+  font-family: "OpenDyslexic";
+  src: local("OpenDyslexic-Regular"), url(OpenDyslexic-Regular.eot); /* IE9+ Compat Modes */
+  src: local("OpenDyslexic-Regular"),
+    url(OpenDyslexic-Regular.eot?#iefix) format("embedded-opentype")
+      /* IE6-IE8 */ url(OpenDyslexic-Regular.woff2) format("woff2"),
+    /* Super modern browsers */ url(OpenDyslexic-Regular.woff) format("woff"),
+    /* Modern browsers */ url(OpenDyslexic-Regular.ttf) format("truetype"),
+    /* Safari, Android, iOS */
+      url(OpenDyslexic-Regular.svg#OpenDyslexic-Regular) format("svg"); /* Legacy iOS */
 }
 
 html {
@@ -31,4 +33,19 @@ body {
   width: 100%;
   bottom: 0;
   margin: 0;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(60, 60, 60);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(152, 152, 152);
+  border-radius: 20px;
+  border: 3px solid rgb(41, 40, 40);
 }
