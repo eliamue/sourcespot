@@ -280,13 +280,12 @@ const data = [
     title: "Theraspecs",
     category: "Products",
     about:
-      "Two individual eye masks, can be heated or chilled, to relieve eye/temple pain & pressure.",
+      "Tinted glasses clinically proven to reduce photophobia symptoms.",
     link: "https://www.theraspecs.com/",
     logo: "https://ww1.prweb.com/prfiles/2013/09/09/11105782/TheraSpecs_logo_big.png",
     location_specific: false,
     location: "",
     tags: [
-      "photophobia",
       "eye care",
       "blue light filter",
       "rose",
@@ -297,13 +296,13 @@ const data = [
       "symptom management",
       "eye pain",
       "headache",
-      "tinted lenses",
+      "lenses",
       "post-concussion",
       "color",
       "eyeglasses",
       "sunglasses",
       "flourescent",
-      "sunlight"
+      "bright sunlight"
     ],
   },
   {
