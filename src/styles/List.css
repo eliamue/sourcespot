@@ -22,7 +22,7 @@
 }
 
 .list-title {
-  color: rgb(122, 195, 244);
+  color: rgb(242, 238, 242);
   font-size: 25px;
   margin-top: 20px;
   padding-top: 20px;
@@ -30,7 +30,7 @@
 }
 
 .resources-prompt {
-  color: rgb(122, 122, 244);
+  color: rgb(186, 165, 186);
   font-size: 15px;
 }
 
@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: rgb(122, 122, 244);
+  color: rgb(186, 165, 186);
   flex-wrap: wrap;
   word-wrap: normal;
   border-radius: 20px;
@@ -86,18 +86,18 @@
 }
 
 .location-disc {
-      align-self: center;
-      padding: 5px;
+  align-self: center;
+  padding: 5px;
 }
 
 .src-title {
   font-size: 1rem;
-  color: rgb(122, 195, 244);
+  color: rgb(242, 238, 242);
   padding: 0 0 5px 5px;
 }
 
 .description {
-  font-size: 0.775rem;
+  font-size: 0.7rem;
   padding: 10px;
   color: rgb(186, 165, 186);
 }

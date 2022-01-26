@@ -12,18 +12,18 @@
 }
 
 a {
-  color: gold;
+color: rgb(242, 238, 242);
 }
 
 a:hover {
   cursor: pointer;
-  color: darkmagenta;
+  color: rgb(118, 118, 118);
 }
 
 .nav-a {
   margin: 2vmin;
   padding: 2vmin;
-  font-family: Tahoma, sans-serif;
+  font-family: "OpenDyslexic", Arial, Helvetica, sans-serif;
 }
 
 .nav-logo {
