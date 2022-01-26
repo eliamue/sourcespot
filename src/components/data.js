@@ -41,6 +41,7 @@ const data = [
       "desktop application",
       "free",
       "sensory processing",
+      "tinted"
     ],
   },
   {
@@ -84,6 +85,7 @@ const data = [
       "mobile application",
       "free",
       "sensory processing",
+      "tinted"
     ],
   },
   {
