@@ -4,7 +4,7 @@ import data from './data.js';
 import ResourceItem from './ResourceItem.js';
 import "../styles/List.css";
 
-const KEYS_TO_FILTERS = ["title", "about", "category"];
+const KEYS_TO_FILTERS = ["title", "about", "category", "tags", "location"];
 
 export default class SearchList extends Component {
   constructor(props) {
