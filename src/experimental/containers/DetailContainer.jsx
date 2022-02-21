@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router';
-import Nav from '../components/Nav';
+import Nav from '../../components/Nav';
 import ResourceDetail from '../components/resources/ResourceDetail';
-import { useOneResource } from '../hooks/useOneResource';
+import { useOneResource } from '../../hooks/useOneResource';
 
 const spinner =
   'https://www.indiasentinels.com/LoaderIcon.gif';

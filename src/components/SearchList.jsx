@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import SearchInput, { createFilter } from "react-search-input";
-import Resource from '../experimental/resources/Resource';
+import Resource from './resources/Resource';
 import "../styles/List.css";
-import { fetchAllResources } from '../experimental/services/apiService.js';
+import { fetchAllResources } from '../services/apiService.js';
 
 const KEYS_TO_FILTERS = ["title", "about", "category", "tags", "located"];
 

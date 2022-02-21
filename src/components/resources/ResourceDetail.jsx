@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../styles/Detail.css';
 import { useParams, useHistory } from 'react-router-dom';
-import { useOneResource } from '../hooks/useOneResource';
-import { deleteResource } from '../services/apiService';
+import { useOneResource } from '../../hooks/useOneResource';
+import { deleteResource } from '../../services/apiService';
 
 
 const spinner = 'https://www.indiasentinels.com/LoaderIcon.gif';

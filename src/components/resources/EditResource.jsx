@@ -1,6 +1,6 @@
 import React from 'react';
-import { updateResource } from '../services/apiService';
-import { useUpdate } from '../hooks/updateResource';
+import { updateResource } from '../../services/apiService';
+import { useUpdate } from '../../hooks/updateResource';
 import '../../../styles/AddForm.css';
 import { useParams, useHistory } from 'react-router-dom';
 import Nav from '../Nav';

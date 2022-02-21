@@ -1,10 +1,10 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import PropTypes from "prop-types";
-import { useCreate } from "../hooks/createResource";
-import { createResource } from "../services/apiService";
+import { useCreate } from "../../hooks/createResource";
+import { createResource } from "../../services/apiService";
 import "../../styles/AddForm.css";
-import Nav from "../../components/Nav";
+import Nav from "../Nav";
 import Tags from "../options/Tags";
 import States from "../options/States";
 
