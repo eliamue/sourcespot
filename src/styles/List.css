@@ -79,6 +79,12 @@
   border-radius: 20px;
 }
 
+.resource-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .category-tag {
   display: flex;
   flex-direction: row;
@@ -88,8 +94,28 @@
 }
 
 .location-disc {
+  display: flex;
+  flex-direction: row;
   align-self: center;
-  padding: 5px;
+  text-align: center;
+  color: rgb(206, 120, 206);
+}
+
+.location-disc > li {
+  padding: 1px;
+}
+
+.location-disc > li:first-of-type:before {
+  content: "*"
+}
+
+.location-disc > li:after {
+  content: ", ";
+  padding-right: 3px;
+}
+
+.location-disc > li:last-of-type:after {
+  content: " only"
 }
 
 .src-title {
@@ -204,4 +230,9 @@ li {
 
 .tags {
   font-size: 5px;
+}
+
+.state-option {
+  padding: 5px;
+  color: purple;
 }

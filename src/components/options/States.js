@@ -10,6 +10,7 @@ export default function States() {
             <MultiSelect
                 isMulti
                 onChange={setSelected}
+                className="state-option"
                 options={stateOptions}
                 value={selected}
                 labeledBy={"Select"}

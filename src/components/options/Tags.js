@@ -10,6 +10,7 @@ export default function Tags() {
             <MultiSelect
                 isMulti
                 onChange={setSelected}
+                className="tag-option"
                 options={tags}
                 value={selected}
                 labeledBy={"Select"}
