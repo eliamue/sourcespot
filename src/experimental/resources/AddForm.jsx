@@ -1,10 +1,12 @@
 import React from "react";
-import { useHistory } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 import PropTypes from "prop-types";
-import { useCreate } from "../../hooks/createResource";
+import { useCreate } from "../hooks/createResource";
 import { createResource } from "../services/apiService";
 import "../../styles/AddForm.css";
 import Nav from "../../components/Nav";
+import Tags from "../options/Tags";
+import States from "../options/States";
 
 const AddForm = () => {
   const history = useHistory();
@@ -12,13 +14,17 @@ const AddForm = () => {
     title,
     category,
     about,
-    link,
+    website,
     logo,
+    located,
+    tags,
     handleTitle,
     handleCategory,
     handleAbout,
-    handleLink,
+    handleWebsite,
     handleLogo,
+    handleLocated,
+    handleTags,
   } = useCreate();
 
   const handleSubmit = async () => {
@@ -26,18 +32,20 @@ const AddForm = () => {
       title,
       category,
       about,
-      link,
+      website,
       logo,
+      located,
+      tags,
     };
     await createResource(data);
-    history.push('/resources');
+    history.push("/");
   };
 
   return (
     <>
-    <Nav />
+      <Nav />
       <h1>Add Resource</h1>
-      <p className="required">* Is Required</p>
+      <div className="required">* Is Required</div>
       <form className="form-container" onSubmit={handleSubmit}>
         <label>
           <div className="prompt">
@@ -52,6 +60,7 @@ const AddForm = () => {
             required
           />
         </label>
+
         <label>
           <div className="prompt">
             <h4 className="required">*</h4>
@@ -69,7 +78,9 @@ const AddForm = () => {
             <option value="Accessibility" label="Accessibility"></option>
             <option value="Advocacy" label="Advocacy"></option>
             <option value="Education" label="Education"></option>
+            <option value="Legal" label="Legal"></option>
             <option value="Products" label="Products"></option>
+            <option value="Services" label="Services"></option>
             <option value="Other" label="Other"></option>
           </select>
         </label>
@@ -94,10 +105,10 @@ const AddForm = () => {
             <h4>Link to Resource: </h4>
           </div>
           <input
-            name="link"
-            className="link"
-            onChange={handleLink}
-            value={link}
+            name="website"
+            className="website"
+            onChange={handleWebsite}
+            value={website}
             placeholder="http://www.tbi-resource.com"
             required
           />
@@ -105,8 +116,8 @@ const AddForm = () => {
 
         <label>
           <div className="prompt">
-              <h4>Logo/Image</h4>
-        </div>
+            <h4>Logo/Image</h4>
+          </div>
           <input
             name="logo"
             className="logo"
@@ -115,9 +126,38 @@ const AddForm = () => {
             placeholder="http://www.tbi-resource.com"
           />
         </label>
-    <p>
-        <button type="submit">Submit</button>
-    </p>
+
+        <label>
+          <div className="prompt">
+              <h4>Location: </h4>
+          </div>
+          <div className="options">
+            <States
+              value={located.value}
+              label={located.label}
+              onChange={handleLocated}
+              className="options"
+            />
+          </div>
+        </label>
+
+        <label>
+          <div className="prompt">
+            <h4>Tags: </h4>
+          </div>
+          <div className="options">
+            <Tags
+              value={tags.value}
+              label={tags.label}
+              onChange={handleTags}
+              className="options"
+            />
+          </div>
+        </label>
+        
+        <div>
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </>
   );
@@ -127,8 +167,10 @@ AddForm.propTypes = {
   title: PropTypes.string,
   category: PropTypes.string,
   about: PropTypes.string,
-  link: PropTypes.string,
+  website: PropTypes.string,
   logo: PropTypes.string,
+  located: PropTypes.string,
+  tags: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default AddForm;

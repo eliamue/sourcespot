@@ -6,8 +6,9 @@ export const useUpdate = (id) => {
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
   const [about, setAbout] = useState("");
-  const [link, setLink] = useState("");
+  const [website, setWebsite] = useState("");
   const [logo, setLogo] = useState("");
+  const [tags, setTags] = useState("");
 
   useEffect(() => {
     updateResource(id)
@@ -15,8 +16,9 @@ export const useUpdate = (id) => {
         setTitle(resource.title);
         setCategory(resource.category);
         setAbout(resource.about);
-        setLink(resource.link);
-        setLogo(resource.Logo);
+        setWebsite(resource.website);
+        setLogo(resource.logo);
+        setTags(resource.tags);
       })
       .finally(() => setLoading(false));
   }, [id]);
@@ -33,12 +35,15 @@ export const useUpdate = (id) => {
     setAbout(target.value);
   };
 
-  const handleLink = ({ target }) => {
-    setLink(target.value);
+  const handleWebsite = ({ target }) => {
+    setWebsite(target.value);
   };
 
   const handleLogo = ({ target }) => {
     setLogo(target.value);
+  };
+  const handleTags = ({ target }) => {
+    setTags(target.value);
   };
 
   return {
@@ -46,12 +51,14 @@ export const useUpdate = (id) => {
     title,
     category,
     about,
-    link,
+    website,
     logo,
+    tags,
     handleTitle,
     handleCategory,
     handleAbout,
-    handleLink,
+    handleWebsite,
     handleLogo,
+    handleTags
   };
 };

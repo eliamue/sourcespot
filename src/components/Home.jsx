@@ -21,21 +21,21 @@ export default class Home extends Component {
               symptom management, and accessibility in day-to-day life.
             </p>
           
-          <p>
+          <div>
             <img src={headache} alt="Person with headache" />
             <p>
               From technologies to reduce symptoms caused by bright white
               screens to products to help manage overstimulation, sourceSPOT
               compiles quality resources for improving life with a brain injury.
             </p>
-          </p>
+          </div>
           </div>
         </section>
         <img src={logo} id="resourcelist" className="main-logo" alt="logo" />
         <section id="resources">
           <div className="list-header">
             <h1 className="list-title">Resources</h1>
-            <p className="resources-prompt">
+            <div className="resources-prompt">
               Search for a resource by keyword or filter by category:
               <section className="categories-container">
                 <div className="category-item">
@@ -87,7 +87,7 @@ export default class Home extends Component {
                   Services
                 </div>
               </section>
-            </p>
+            </div>
           </div>
           <SearchList />
         </section>

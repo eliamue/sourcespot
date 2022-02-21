@@ -1,9 +1,9 @@
-// const URL = "https://tbi-resources.herokuapp.com/api/v1/resources";
+// const URL = "https://sourcespot.herokuapp.com/api/v1/resources";
 
 export const fetchAllResources = async () => {
   try {
     const res = await fetch(
-      'https://tbi-resources.herokuapp.com/api/v1/resources'
+      'https://sourcespot.herokuapp.com/api/v1/resources'
     );
 
     const resources = await res.json();
@@ -12,8 +12,10 @@ export const fetchAllResources = async () => {
       title: resource.title,
       category: resource.category,
       about: resource.about,
-      link: resource.link,
+      website: resource.website,
       logo: resource.logo,
+      located: resource.located,
+      tags: resource.tags
     }));
   } catch (error) {
     console.error(error.message);
@@ -23,15 +25,17 @@ export const fetchAllResources = async () => {
 export const fetchOneResource = async (resourceId) => {
   try {
     const res = await fetch(
-      `https://tbi-resources.herokuapp.com/api/v1/resources/${resourceId}`
+      `https://sourcespot.herokuapp.com/api/v1/resources/${resourceId}`
     );
     const {
       id,
       title,
       category,
       about,
-      link,
+      website,
       logo,
+      located,
+      tags
     } = await res.json();
 
     return {
@@ -39,8 +43,10 @@ export const fetchOneResource = async (resourceId) => {
       title,
       category,
       about,
-      link,
+      website,
       logo,
+      located,
+      tags
     };
   } catch (error) {
     console.error(error.message);
@@ -50,7 +56,7 @@ export const fetchOneResource = async (resourceId) => {
 export const createResource = async (data) => {
   try {
     const res = await fetch(
-      'https://tbi-resources.herokuapp.com/api/v1/resources',
+      'https://sourcespot.herokuapp.com/api/v1/resources',
       {
         method: "POST",
         body: JSON.stringify(data),
@@ -66,8 +72,10 @@ export const createResource = async (data) => {
       title,
       category,
       about,
-      link,
+      website,
       logo,
+      located,
+      tags
     } = await res.json();
 
     return {
@@ -75,8 +83,10 @@ export const createResource = async (data) => {
       title,
       category,
       about,
-      link,
+      website,
       logo,
+      located,
+      tags
     };
   } catch (error) {
     console.error(error.message);
@@ -85,7 +95,7 @@ export const createResource = async (data) => {
 
 export const updateResource = async (id, updatedResource) => {
   const res = await fetch(
-    `https://tbi-resources.herokuapp.com/api/v1/resources/${id}`,
+    `https://sourcespot.herokuapp.com/api/v1/resources/${id}`,
     {
       method: "PUT",
       headers: {
@@ -98,7 +108,7 @@ export const updateResource = async (id, updatedResource) => {
 };
 
 export const deleteResource = (id) => {
-  return fetch(`https://tbi-resources.herokuapp.com/api/v1/resources/${id}`, {
+  return fetch(`https://sourcespot.herokuapp.com/api/v1/resources/${id}`, {
     method: "DELETE",
   }).then((res) => res.json());
 };

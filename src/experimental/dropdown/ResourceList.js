@@ -51,7 +51,7 @@ export default class ImageList extends Component {
           <section className="resources">
             {resources.map((resources, i) => (
               <ResourceItem
-                link={resources.link}
+                website={resources.website}
                 logo={resources.logo}
                 title={resources.title}
                 about={resources.about}

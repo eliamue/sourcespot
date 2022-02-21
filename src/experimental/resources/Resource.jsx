@@ -1,25 +1,29 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { PropTypes } from "prop-types";
 
-const Resource = ({ id, title, category, link, logo, about }) => (
-    <div>
-        <section className="resource">
-            <Link to={`/${id}`}>
-            <h2 className="srcName">{title}</h2>
-            </Link>
-            <h3 className="category">Category: {category}</h3>
-            <h4 className="location">{link}, {logo}</h4>
-            <p className="description">{about}</p>
-        </section>
-  </div>
+const Resource = ({ id, title, category, website, logo, located, about }) => (
+    <div className="resources">
+      <div className="category-tag">
+        <img
+          src={`${process.env.PUBLIC_URL}/${category}.png`}
+          className="category-icon"
+          alt={category}
+        />
+      </div>
+      <div className="location-disc">{located}</div>
+      <h2 className="src-title">{title}</h2>
+      <a href={website} alt={title}>
+        <img src={logo} className="logo" alt={title} />
+      </a>
+      <div className="description">{about}</div>
+    </div>
 );
 
 Resource.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
   category: PropTypes.string,
-  link: PropTypes.string,
+  website: PropTypes.string,
   logo: PropTypes.string,
   about: PropTypes.string,
 };

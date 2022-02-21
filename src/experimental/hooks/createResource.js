@@ -4,8 +4,10 @@ export const useCreate = () => {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   const [about, setAbout] = useState('');
-  const [link, setLink] = useState('');
+  const [website, setWebsite] = useState('');
   const [logo, setLogo] = useState('');
+  const [located, setLocated] = useState('');
+  const [tags, setTags] = useState('');
 
   const handleTitle = ({ target }) => {
     setTitle(target.value);
@@ -19,24 +21,36 @@ export const useCreate = () => {
     setAbout(target.value);
   };
 
-  const handleLink = ({ target }) => {
-    setLink(target.value);
+  const handleWebsite = ({ target }) => {
+    setWebsite(target.value);
   };
 
   const handleLogo = ({ target }) => {
     setLogo(target.value);
   };
 
+  const handleLocated = ({ target }) => {
+    setLocated(target.value);
+  };
+
+  const handleTags = ({ target }) => {
+    setTags(target.value);
+  };
+
   return {
     title,
     category,
     about,
-    link,
+    website,
     logo,
+    located,
+    tags,
     handleTitle,
     handleCategory,
     handleAbout,
-    handleLink,
+    handleWebsite,
     handleLogo,
+    handleLocated,
+    handleTags
   };
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/Detail.css';
 import { useParams, useHistory } from 'react-router-dom';
-import { useOneResource } from '../../hooks/useOneResource';
+import { useOneResource } from '../hooks/useOneResource';
 import { deleteResource } from '../services/apiService';
 
 
@@ -15,8 +15,10 @@ const ResourceDetail = () => {
     title,
     category,
     about,
-    link,
+    website,
+    located,
     logo,
+    tags
   } = resource;
 
   function handleDelete() {
@@ -33,12 +35,13 @@ const ResourceDetail = () => {
   return (
     <div className="details">
       <h1 aria-label="src-name">{title}</h1>
+      <div className="location-disc">{located}</div>
       <h3>Category: {category}</h3>
-        <a href={link}>
+        <a href={website}>
           <img src={logo} alt="logo" />
         </a>
       <h4 className="description">{about}</h4>
-
+    <p className="tags">{tags}</p>
       <section>
         <button name="delete-btn" onClick={handleDelete}>Delete Resource</button>
         <button onClick={handleEdit}>Edit Resource</button>

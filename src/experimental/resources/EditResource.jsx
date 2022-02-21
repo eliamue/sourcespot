@@ -1,7 +1,7 @@
 import React from 'react';
-import { updateResource } from '../../services/apiService';
-import { useUpdate } from '../../hooks/updateResource';
-import '../../styles/AddForm.css';
+import { updateResource } from '../services/apiService';
+import { useUpdate } from '../hooks/updateResource';
+import '../../../styles/AddForm.css';
 import { useParams, useHistory } from 'react-router-dom';
 import Nav from '../Nav';
 
@@ -12,13 +12,17 @@ const EditResource = () => {
     title,
     category,
     about,
-    link,
+    website,
     logo,
+    located,
+    tags,
     handleTitle,
     handleCategory,
     handleAbout,
-    handleLink,
+    handleWebsite,
     handleLogo,
+    handleLocated,
+    handleTags,
   } = useUpdate(id);
 
   const handleSubmit = async (event) => {
@@ -27,8 +31,10 @@ const EditResource = () => {
       title,
       category,
       about,
-      link,
+      website,
       logo,
+      located,
+      tags
     };
     await updateResource(id, updated);
     history.push(`/${id}`);
@@ -76,9 +82,9 @@ const EditResource = () => {
         <label>
           Link to Resource:
           <input
-            name="link"
-            onChange={handleLink}
-            value={link}
+            name="website"
+            onChange={handleWebsite}
+            value={website}
             placeholder="Link to resource website/detail"
           />
         </label>
@@ -90,6 +96,24 @@ const EditResource = () => {
             onChange={handleLogo}
             value={logo}
             placeholder="Direct link to logo or image of resource"
+          />
+        </label>
+        <label>
+          Location if applicable:
+          <input
+            name="located"
+            onChange={handleLocated}
+            placeholder="If location-specific, state abbreviation. Leave empty if not location-specific."
+            value={located}
+          />
+        </label>
+        <label>
+          Tags:
+          <input
+            name="tags"
+            onChange={handleTags}
+            placeholder="List of appropriate tags, separated by comma"
+            value={tags}
           />
         </label>
 
