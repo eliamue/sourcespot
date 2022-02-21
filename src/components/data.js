@@ -141,7 +141,7 @@ const data = [
     about:
       "Personal injury lawyers in St Paul, MN: Work Comp as well as auto, bike, & pedestrian accidents.",
     website: "https://schroeder-mandel.com/",
-    logo: "https://media-exp1.licdn.com/dms/image/C5612AQEggkuEHNblKA/article-inline_image-shrink_1500_2232/0/1520188627674?e=1645056000&v=beta&t=qcok-oIuLoKDkgd0OXGbyK3aYbQawRAMEA8LG6x8RZo",
+    logo: "https://www.bbb.org/ProfileImages/d299ccc2-b35e-4c9d-9748-f0187030f49f.jpeg",
     located: "*MN only",
     tags: [
       "worker's compensation",
