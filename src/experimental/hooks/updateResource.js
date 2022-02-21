@@ -8,6 +8,7 @@ export const useUpdate = (id) => {
   const [about, setAbout] = useState("");
   const [website, setWebsite] = useState("");
   const [logo, setLogo] = useState("");
+  const [located, setLocated] = useState("");
   const [tags, setTags] = useState("");
 
   useEffect(() => {
@@ -18,6 +19,7 @@ export const useUpdate = (id) => {
         setAbout(resource.about);
         setWebsite(resource.website);
         setLogo(resource.logo);
+        setLocated(resource.located);
         setTags(resource.tags);
       })
       .finally(() => setLoading(false));
@@ -42,6 +44,11 @@ export const useUpdate = (id) => {
   const handleLogo = ({ target }) => {
     setLogo(target.value);
   };
+
+  const handleLocated = ({ target }) => {
+    setLocated(target.value);
+  };
+
   const handleTags = ({ target }) => {
     setTags(target.value);
   };
@@ -53,12 +60,14 @@ export const useUpdate = (id) => {
     about,
     website,
     logo,
+    located,
     tags,
     handleTitle,
     handleCategory,
     handleAbout,
     handleWebsite,
     handleLogo,
+    handleLocated,
     handleTags
   };
 };

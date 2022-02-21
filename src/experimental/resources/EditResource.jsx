@@ -99,7 +99,7 @@ const EditResource = () => {
           />
         </label>
         <label>
-          Location if applicable:
+          Location:
           <input
             name="located"
             onChange={handleLocated}

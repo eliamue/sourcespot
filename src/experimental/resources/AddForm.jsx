@@ -169,8 +169,8 @@ AddForm.propTypes = {
   about: PropTypes.string,
   website: PropTypes.string,
   logo: PropTypes.string,
-  located: PropTypes.string,
-  tags: PropTypes.arrayOf(PropTypes.string),
+  located: PropTypes.arrayOf(PropTypes.string),
+  tags: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default AddForm;

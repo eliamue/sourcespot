@@ -1,7 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-const Resource = ({ id, title, category, website, logo, located, about }) => (
+const Resource = ({ id, title, category, website, logo, located, about, tags }) => (
     <div className="resources">
       <div className="category-tag">
         <img
@@ -16,6 +16,7 @@ const Resource = ({ id, title, category, website, logo, located, about }) => (
         <img src={logo} className="logo" alt={title} />
       </a>
       <div className="description">{about}</div>
+      <div className="tags">{tags}</div>
     </div>
 );
 
@@ -23,9 +24,11 @@ Resource.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
   category: PropTypes.string,
+  about: PropTypes.string,
   website: PropTypes.string,
   logo: PropTypes.string,
-  about: PropTypes.string,
+  located: PropTypes.arrayOf(PropTypes.string),
+  tags: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Resource;
