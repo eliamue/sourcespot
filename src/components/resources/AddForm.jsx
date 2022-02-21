@@ -27,7 +27,8 @@ const AddForm = () => {
     handleTags,
   } = useCreate();
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     const data = {
       title,
       category,
@@ -74,7 +75,7 @@ const AddForm = () => {
               value={category}
               required
             >
-              <option value="" selected disabled>
+              <option value="" defaultValue disabled>
                 --
               </option>
               <option value="Accessibility" label="Accessibility"></option>

@@ -1,4 +1,5 @@
 // const URL = "https://sourcespot.herokuapp.com/api/v1/resources";
+// import request from 'superagent';
 
 export const fetchAllResources = async () => {
   try {
@@ -52,6 +53,14 @@ export const fetchOneResource = async (resourceId) => {
     console.error(error.message);
   }
 };
+
+// export async function createResource(data) {
+//   const { body } = await request
+//   .post('https://sourcespot.herokuapp.com/api/v1/resources')
+//   .send(data);
+
+//   return body;
+// }
 
 export const createResource = async (data) => {
   try {
