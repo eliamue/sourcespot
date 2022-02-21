@@ -16,7 +16,6 @@ const Resource = ({ id, title, category, website, logo, located, about, tags }) 
         <img src={logo} className="logo" alt={title} />
       </a>
       <div className="description">{about}</div>
-      <div className="tags">{tags}</div>
     </div>
 );
 

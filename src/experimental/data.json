@@ -142,8 +142,6 @@
     "logo": "https://www.bbb.org/ProfileImages/d299ccc2-b35e-4c9d-9748-f0187030f49f.jpeg",
     "located": ["MN"],
     "tags": [
-      "Minnesota",
-      "Twin Cities",
       "worker's compensation",
       "lawyers",
       "financial",
@@ -168,11 +166,9 @@
       "tracking software",
       "memory care",
       "medications",
-      "meals",
       "habits",
       "scheduling",
-      "calendar",
-      "memory impairment"
+      "calendar"
     ]
   },
   {
@@ -206,7 +202,7 @@
     "located": [],
     "tags": [
       "overstimulation",
-      "de-stim destim",
+      "de-stim",
       "hearing",
       "ear care",
       "noise sensitivity",
@@ -291,15 +287,10 @@
       "tracking",
       "memory care",
       "daily meds",
-      "meals",
       "habits",
       "scheduling",
       "calendar",
-      "memory impairment",
-      "medications",
-      "dry erase",
-      "magnetic",
-      "week view"
+      "medications"
     ]
   },
   {
@@ -314,15 +305,10 @@
       "tracking",
       "memory care",
       "planning",
-      "meals",
       "habits",
       "scheduling",
       "calendar",
-      "memory impairment",
-      "activities",
-      "journaling",
-      "week view",
-      "year"
+      "journaling"
     ]
   },
   {
@@ -333,13 +319,12 @@
     "logo": "https://adaptiveadventures.org/wp-content/uploads/2017/05/Courage-Kenny-Logo.jpg",
     "located": ["MN"],
     "tags": [
-      "Minnesota",
       "support groups",
       "concussion care",
       "therapy",
       "treatment",
       "medical doctor",
-      "physical rehab",
+      "physical rehabilitation",
       "speech therapy",
       "case management",
       "recovery"
@@ -353,7 +338,6 @@
     "logo": "https://hereforlife.blog/wp-content/uploads/2018/03/featured-hennepin-healthcare-promo.jpg",
     "located": ["MN"],
     "tags": [
-      "Minnesota",
       "ER",
       "case management",
       "medical doctor",
@@ -361,7 +345,7 @@
       "treatment",
       "recovery",
       "therapy",
-      "physical rehab"
+      "physical rehabilitation"
     ]
   }
 ]
