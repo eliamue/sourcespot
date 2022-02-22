@@ -5,8 +5,29 @@ import logo from "../assets/logo.png";
 import headache from "../assets/headache.png";
 import SearchList from "./SearchList.jsx";
 import About from "./About";
+import moment from 'moment';
+
 
 export default class Home extends Component {
+  constructor() {
+super()
+   
+
+    var today = new Date(),
+
+    date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+
+   
+
+    this.state = {
+
+      currentDate: date
+
+    }
+
+  }
+  
+
   render() {
     return (
       <div className="full-body">
@@ -95,7 +116,7 @@ export default class Home extends Component {
         <section id="about">
           <About />
         </section>
-        <footer>Elise Muellerleile &copy; 2022</footer>
+        <footer>Elise Muellerleile &copy; 2022. Last updated { this.state.currentDate }</footer>
       </div>
     );
   }
