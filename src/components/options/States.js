@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import stateOptions from './stateoptions.js'
+import stateOptions from './data/stateoptions.js'
 // import makeAnimated from 'react-select/animated';
 import { MultiSelect } from "react-multi-select-component";
 

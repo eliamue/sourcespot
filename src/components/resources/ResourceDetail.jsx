@@ -21,9 +21,9 @@ const ResourceDetail = () => {
     tags
   } = resource;
 
-  function handleDelete() {
+  function handleDelete(id) {
     deleteResource(id);
-    history.push('/resources');
+    history.push('/');
   }
 
   function handleEdit() {

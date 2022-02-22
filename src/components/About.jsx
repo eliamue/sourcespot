@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import MailTo from "./MailTo";
 import "../styles/App.css";
 import "../styles/About.css";
@@ -54,11 +54,12 @@ export default class About extends Component {
             Big or small, input is always welcome as sourceSPOT is actively in
             development. Whether you have a resource you'd like to see added to
             the list, have a suggestion for improving accessibility, or found a
-            dead link, please reach out!
+            dead link, any contribution is helpful for continued development!
           </p>
           <div className="email-link">
             <MailTo label="Contact Me" mailto="mailto:eliamue@live.com" />
           </div>
+          <Link to="/add">Add Resource</Link>
         </section>
       </div>
     );

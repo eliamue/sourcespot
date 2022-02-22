@@ -1,5 +1,5 @@
 // const URL = "https://sourcespot.herokuapp.com/api/v1/resources";
-// import request from 'superagent';
+import request from 'superagent';
 
 export const fetchAllResources = async () => {
   try {
@@ -14,9 +14,7 @@ export const fetchAllResources = async () => {
       category: resource.category,
       about: resource.about,
       website: resource.website,
-      logo: resource.logo,
-      located: resource.located,
-      tags: resource.tags
+      logo: resource.logo
     }));
   } catch (error) {
     console.error(error.message);
@@ -34,9 +32,7 @@ export const fetchOneResource = async (resourceId) => {
       category,
       about,
       website,
-      logo,
-      located,
-      tags
+      logo
     } = await res.json();
 
     return {
@@ -45,9 +41,7 @@ export const fetchOneResource = async (resourceId) => {
       category,
       about,
       website,
-      logo,
-      located,
-      tags
+      logo
     };
   } catch (error) {
     console.error(error.message);
@@ -82,9 +76,7 @@ export const createResource = async (data) => {
       category,
       about,
       website,
-      logo,
-      located,
-      tags
+      logo
     } = await res.json();
 
     return {
@@ -93,9 +85,7 @@ export const createResource = async (data) => {
       category,
       about,
       website,
-      logo,
-      located,
-      tags
+      logo
     };
   } catch (error) {
     console.error(error.message);
@@ -116,8 +106,9 @@ export const updateResource = async (id, updatedResource) => {
   return res.json();
 };
 
-export const deleteResource = (id) => {
-  return fetch(`https://sourcespot.herokuapp.com/api/v1/resources/${id}`, {
-    method: "DELETE",
-  }).then((res) => res.json());
-};
+export async function deleteResource(id) {
+    const { body } = await request
+    .delete(`https://sourcespot.herokuapp.com/api/v1/resources/${id}`);
+
+    return body;
+}

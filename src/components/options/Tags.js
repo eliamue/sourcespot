@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import tags from './tagoptions.js'
+import tags from './data/tagoptions.js';
 // import makeAnimated from 'react-select/animated';
 import { MultiSelect } from "react-multi-select-component";
 

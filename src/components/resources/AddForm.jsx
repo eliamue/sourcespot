@@ -148,8 +148,8 @@ const AddForm = () => {
             </div>
             <div className="options">
               <Tags
-                value={tags.value}
-                label={tags.label}
+                value={tags.tag}
+                label={tags.tag}
                 onChange={handleTags}
                 className="options"
               />

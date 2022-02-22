@@ -36,6 +36,7 @@ const Resource = ({
       <img src={logo} className="logo" alt={title} />
     </a>
     <div className="description">{about}</div>
+    <h5 className="src-tags">{tags}</h5>
   </div>
 );
 
