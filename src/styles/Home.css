@@ -26,9 +26,12 @@
 }
 
 footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   font-size: 2vmin;
   padding: 5px;
-   color: rgb(118, 118, 118);
+  color: rgb(118, 118, 118);
   margin-top: 50px;
   background-color: rgb(18, 17, 17);
   box-shadow: black 2px 15px 15px 20px;

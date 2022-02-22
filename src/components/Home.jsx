@@ -5,28 +5,24 @@ import logo from "../assets/logo.png";
 import headache from "../assets/headache.png";
 import SearchList from "./SearchList.jsx";
 import About from "./About";
-import moment from 'moment';
-
+import moment from "moment";
 
 export default class Home extends Component {
   constructor() {
-super()
-   
+    super();
 
     var today = new Date(),
-
-    date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-
-   
+      date =
+        today.getFullYear() +
+        "-" +
+        (today.getMonth() + 1) +
+        "-" +
+        today.getDate();
 
     this.state = {
-
-      currentDate: date
-
-    }
-
+      currentDate: date,
+    };
   }
-  
 
   render() {
     return (
@@ -34,22 +30,24 @@ super()
         <section id="home" className="home-container">
           <Nav />
           <div className="home-description">
-          <header className="page-head">
-            <div className="title1">SOURCE</div><div className="title2">SPOT</div>
-          </header>
+            <header className="page-head">
+              <div className="title1">SOURCE</div>
+              <div className="title2">SPOT</div>
+            </header>
             <p>
               A one-stop shop for resources to help TBI survivors with recovery,
               symptom management, and accessibility in day-to-day life.
             </p>
-          
-          <div>
-            <img src={headache} alt="Person with headache" />
-            <p>
-              From technologies to reduce symptoms caused by bright white
-              screens to products to help manage overstimulation, sourceSPOT
-              compiles quality resources for improving life with a brain injury.
-            </p>
-          </div>
+
+            <div>
+              <img src={headache} alt="Person with headache" />
+              <p>
+                From technologies to reduce symptoms caused by bright white
+                screens to products to help manage overstimulation, sourceSPOT
+                compiles quality resources for improving life with a brain
+                injury.
+              </p>
+            </div>
           </div>
         </section>
         <img src={logo} id="resourcelist" className="main-logo" alt="logo" />
@@ -116,7 +114,10 @@ super()
         <section id="about">
           <About />
         </section>
-        <footer>Elise Muellerleile &copy; 2022. Last updated { this.state.currentDate }</footer>
+        <footer>
+          <div>Elise Muellerleile &copy; 2022</div>{" "}
+          <div>Last updated {this.state.currentDate}</div>
+        </footer>
       </div>
     );
   }
