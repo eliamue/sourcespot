@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 import headache from "../assets/headache.png";
 import SearchList from "./SearchList.jsx";
 import About from "./About";
-import moment from "moment";
+import Categories from './categories/Categories.jsx';
 
 export default class Home extends Component {
   constructor() {
@@ -56,56 +56,7 @@ export default class Home extends Component {
             <h1 className="list-title">Resources</h1>
             <div className="resources-prompt">
               Search for a resource by keyword or filter by category:
-              <section className="categories-container">
-                <div className="category-item">
-                  <img
-                    src={`${process.env.PUBLIC_URL}/accessibility.png`}
-                    className="category-icon"
-                    alt="Accessibility"
-                  />
-                  Accessibility
-                </div>
-                <div className="category-item">
-                  <img
-                    src={`${process.env.PUBLIC_URL}/advocacy.png`}
-                    className="category-icon"
-                    alt="advocacy"
-                  />
-                  Advocacy
-                </div>
-                <div className="category-item">
-                  <img
-                    src={`${process.env.PUBLIC_URL}/education.png`}
-                    className="category-icon"
-                    alt="education"
-                  />
-                  Education
-                </div>
-                <div className="category-item">
-                  <img
-                    src={`${process.env.PUBLIC_URL}/legal.png`}
-                    className="category-icon"
-                    alt="legal"
-                  />
-                  Legal
-                </div>
-                <div className="category-item">
-                  <img
-                    src={`${process.env.PUBLIC_URL}/products.png`}
-                    className="category-icon"
-                    alt="products"
-                  />
-                  Products
-                </div>
-                <div className="category-item">
-                  <img
-                    src={`${process.env.PUBLIC_URL}/services.png`}
-                    className="category-icon"
-                    alt="services"
-                  />
-                  Services
-                </div>
-              </section>
+              <Categories />
             </div>
           </div>
           <SearchList />
