@@ -5,7 +5,6 @@ import logo from "../assets/logo.png";
 import headache from "../assets/headache.png";
 import SearchList from "./SearchList.jsx";
 import About from "./About";
-import moment from "moment";
 
 export default class Home extends Component {
   constructor() {
