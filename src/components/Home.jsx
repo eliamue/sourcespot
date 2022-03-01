@@ -9,9 +9,6 @@ import About from "./About";
 export default class Home extends Component {
   constructor() {
     super();
-    this.state = {
-      currentDateTime: Date().toLocaleString(),
-    };
   }
 
   render() {
@@ -105,7 +102,6 @@ export default class Home extends Component {
           <About />
         </section>
         <footer>
-          <div>{ this.state.currentDateTime }</div>
           <div>Elise Muellerleile &copy; 2022</div>{" "}
           <div>Last updated 2-28-2022</div>
         </footer>
