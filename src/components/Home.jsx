@@ -7,10 +7,6 @@ import SearchList from "./SearchList.jsx";
 import About from "./About";
 
 export default class Home extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <div className="full-body">
