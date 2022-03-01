@@ -12,11 +12,11 @@ export default class Home extends Component {
 
     var today = new Date(),
       date =
-        today.getFullYear() +
+        today.getDate() +
         "-" +
         (today.getMonth() + 1) +
         "-" +
-        today.getDate();
+        today.getFullYear();
 
     this.state = {
       currentDate: date,
@@ -114,8 +114,9 @@ export default class Home extends Component {
           <About />
         </section>
         <footer>
+          <div>{this.state.currentDate}</div>
           <div>Elise Muellerleile &copy; 2022</div>{" "}
-          <div>Last updated {this.state.currentDate}</div>
+          <div>Last updated 2-28-2022/</div>
         </footer>
       </div>
     );
