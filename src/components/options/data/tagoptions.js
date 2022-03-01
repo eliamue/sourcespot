@@ -39,7 +39,7 @@ const TagOptions = [
     { value: 'calendar', label: 'calendar' },
     { value: 'symptom relief/management', label: 'symptom relief/management' },
     { value: 'medical', label: 'medical' },
-    { value: 'marijuana dispensary', label: 'marijuana dispensary' },
+    { value: 'THC/CBD', label: 'THC/CBD' },
     { value: 'overstimulation', label: 'overstimulation' },
     { value: 'de-stim', label: 'de-stim' },
     { value: 'pain relief', label: 'pain relief' },
